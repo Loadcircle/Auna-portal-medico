@@ -1,0 +1,85 @@
+:root{
+    --blue: #11acc8; 
+    --green: #c0d62d; 
+    --grey: #757575; 
+    --blue_b: #099ab4;
+    --grey_b: #b8b8b8; 
+    --background: #f9f9f9; 
+}
+@font-face{
+    src: url(../fonts/DINPro.otf);
+    font-family: 'dinpro';
+}
+@font-face{
+    src: url(../fonts/DINPro-Medium.otf);
+    font-family: 'dinpro-medium';
+}
+@font-face{
+    src: url(../fonts/DINPro-Bold.otf);
+    font-family: 'dinpro-bold';
+}
+@font-face{
+    src: url(../fonts/DINPro-Black.otf);
+    font-family: 'dinpro-black';
+}
+body{
+    margin: 0;
+}
+*{
+    outline: none;
+    font-family: 'dinpro';
+}
+a, a:link, a:hover{
+    text-decoration: none;
+}
+p{
+    color: var(--grey);
+}
+strong{
+    font-family: 'dinpro-bold';
+}
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+h4{
+
+}
+h5{
+
+}
+h6{
+
+}
+.medium{
+    font-family: 'dinpro-medium';
+}
+.bold{
+    font-family: 'dinpro-bold';
+}
+.black{
+    font-family: 'dinpro-black';
+}
+.text-center{
+    text-align: center
+}
+.blue{
+    color: var(--blue);
+}
+.green{
+    color: var(--green);
+}
+.grey{
+    color: var(--grey);
+}
+.blue_b{
+    color: var(--blue_b);
+}
+.grey_b{
+    color: var(--grey_b);
+}
