@@ -1,0 +1,66 @@
+#login{
+    background-color: var(--blue);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login form{
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#login form > div{
+    position: relative;
+}
+#login form > div:before{
+    content: url(../assets/people.png);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    margin: auto;
+    height: fit-content;
+}
+#login form > div:nth-child(2):before{
+    content: url(../assets/lock.png);
+}
+#login form input{
+    font-size: 20px;
+    color: #fff;
+    background: none; 
+    border-radius: 10px;
+    border: solid 1px #fff;
+    text-align: center;
+    margin: 5px 0;
+    width: 275px;
+    height: 45px;
+    box-sizing: border-box;
+}
+#login form input::placeholder{
+    color: #fff;
+}
+#login form input[type="submit"]{  
+    border-radius: 10px;
+    background-color: var(--blue_b);  
+    width: 275px;
+    height: 45px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'dinpro-bold';
+    margin-top: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px){
+    #login{
+        padding: 50px;
+        box-sizing: border-box;
+    }
+}

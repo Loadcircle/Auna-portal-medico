@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Historia clinica por nombre</title>
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="styles/main_syles.css">
+
+    <!-- Estilos de vista -->
+    <link rel="stylesheet" href="styles/historia_nombre.css">
+
+    <link rel="stylesheet" href="slick/slick/slick.css">
+
+</head>
+<body>
+
+    <div id="historia_nombre">
+        <nav id="main_nav">
+            <img class="logo" src="assets/logo_blanco.png" alt="logo">
+        </nav>
+
+        <nav class="only_mobile">
+            <img class="home" src="//via.placeholder.com/20x20" alt="home">
+            <h2>Buscar paciente</h2>
+            <div id="search_toggle">
+                <img  src="//via.placeholder.com/20x20" alt="search">
+            </div>
+        </nav>
+
+        <div class="holder_view">
+            <div class="search">
+                <h2>Buscar paciente</h2>
+    
+                <div class="insight_search">
+                    <div>
+                        <a href="#" class="name">Por nombre</a>
+                        <a href="#" >Por documento de identidad</a>
+                        <a href="#"  class="dni only_mobile">Por DNI</a>
+                        <a href="#" class="qr only_mobile">Por código QR</a>
+                    </div>
+                    <form action="" id="form_name">
+                        <div>
+                            <input type="text" name="nombre">
+                        </div>
+                        <div>
+                            <input type="text" name="apellido">
+                        </div>
+
+                        <span class="submit">
+                            <input type="submit" value="Buscar">
+                        </span>
+                    
+                        <label for="medicos">
+                            <input type="checkbox" id="medicos" name="medicos">
+                            Todos los médicos
+                        </label>
+                    </form>
+                </div>
+
+                <div class="menu_table">
+                    <div class="items_menu_table">
+                        <a href="#" class="active">
+                            <img class="only_mobile" src="//via.placeholder.com/23x20" alt="">
+                            <p>Ambulatorio</p>
+                        </a>
+                        <a href="#">
+                            <img class="only_mobile" src="//via.placeholder.com/23x20" alt="">
+                            <p>Emergencia</p>
+                        </a>
+                        <a href="#">
+                            <img class="only_mobile" src="//via.placeholder.com/23x20" alt="">
+                            <p>Hospitalización</p>
+                        </a>
+                    </div>
+                    <div>
+                        <p>Fecha de<br>ingreso</p>
+                        <p>Hora</p>
+                        <p>Cama</p>
+                        <p>Nombre</p>
+                        <p>Apellidos</p>
+                        <p>Edad</p>
+                        <p>Diagnóstico</p>
+                        <p>Imagen</p>
+                        <p>Laboratorio</p>
+                        <p>Técnicas<br>especiales</p>
+                        <p>Garante</p>
+                        <p></p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table">
+            <div class="items_table">
+                <div class="item_table">
+                    <div>
+                        <p class="only_mobile title_mobile">Fecha de ingreso</p>
+                        <p>11 / 09 / 2018</p>
+                    </div>
+                    <div>
+                        <p class="only_mobile title_mobile">Hora</p>
+                        <p>14:00</p>
+                    </div>
+                    <div>
+                        <p class="only_mobile title_mobile">Cama</p>
+                        <p>202</p>
+                    </div>
+                    <div>
+                        <p class="only_mobile title_mobile">Nombre</p>
+                        <p>Luis Alexander</p>
+                    </div>
+                    <div>
+                        <p class="only_mobile title_mobile">Apellidos</p>
+                        <p>Montalvo López</p>
+                    </div>
+                    <div>
+                        <p class="only_mobile title_mobile">Edad</p>
+                        <p>35</p>
+                    </div>
+                    <div>
+                        <p class="only_mobile title_mobile">Diagnóstico</p>
+                        <p>Nombre de diagnóstico</p>
+                    </div>
+                    
+                    <div class="slick_items_table">
+
+                        <div>
+                            <div>
+                                <p class="only_mobile title_mobile">Imagen</p>
+                                <div class="colors_container">
+                                    <a class="red" href="#">1</a>
+                                    <a class="yellow" href="#">2</a>
+                                    <a class="green" href="#">3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <p class="only_mobile title_mobile">Laboratorio</p>
+                                <div class="colors_container">
+                                    <a class="red" href="#">1</a>
+                                    <a class="yellow" href="#">2</a>
+                                    <a class="green" href="#">3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <p class="only_mobile title_mobile">Técnicas especiales</p>
+                                <div class="colors_container">
+                                    <a class="red" href="#">1</a>
+                                    <a class="yellow" href="#">2</a>
+                                    <a class="green" href="#">3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div>
+                        <p class="only_mobile title_mobile">Garante</p>
+                        <p>Mapfre EPS</p>
+                    </div>
+                    
+                    <div>
+                        <a href="#">
+                            <p class="only_mobile">Ver Historia Clinica</p>
+                            <img src="//via.placeholder.com/20x20" alt="ver">
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="item_table">
+                    <div>
+                        <p class="only_mobile title_mobile">Fecha de ingreso</p>
+                        <p>11 / 09 / 2018</p>
+                    </div>
+                    <div>
+                        <p class="only_mobile title_mobile">Hora</p>
+                        <p>14:00</p>
+                    </div>
+                    <div>
+                        <p class="only_mobile title_mobile">Cama</p>
+                        <p>202</p>
+                    </div>
+                    <div>
+                        <p class="only_mobile title_mobile">Nombre</p>
+                        <p>Luis Alexander</p>
+                    </div>
+                    <div>
+                        <p class="only_mobile title_mobile">Apellidos</p>
+                        <p>Montalvo López</p>
+                    </div>
+                    <div>
+                        <p class="only_mobile title_mobile">Edad</p>
+                        <p>35</p>
+                    </div>
+                    <div>
+                        <p class="only_mobile title_mobile">Diagnóstico</p>
+                        <p>Nombre de diagnóstico</p>
+                    </div>
+                    
+                    <div class="slick_items_table">
+
+                        <div>
+                            <div>
+                                <p class="only_mobile title_mobile">Imagen</p>
+                                <div class="colors_container">
+                                    <a class="red" href="#">1</a>
+                                    <a class="yellow" href="#">2</a>
+                                    <a class="green" href="#">3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <p class="only_mobile title_mobile">Laboratorio</p>
+                                <div class="colors_container">
+                                    <a class="red" href="#">1</a>
+                                    <a class="yellow" href="#">2</a>
+                                    <a class="green" href="#">3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <p class="only_mobile title_mobile">Técnicas especiales</p>
+                                <div class="colors_container">
+                                    <a class="red" href="#">1</a>
+                                    <a class="yellow" href="#">2</a>
+                                    <a class="green" href="#">3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div>
+                        <p class="only_mobile title_mobile">Garante</p>
+                        <p>Mapfre EPS</p>
+                    </div>
+                    
+                    <div>
+                        <a href="#">
+                            <p class="only_mobile">Ver Historia Clinica</p>
+                            <img src="//via.placeholder.com/20x20" alt="ver">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Javascript toda web -->
+    <script src="js/main_app.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="slick/slick/slick.min.js"></script>
+
+    <script>
+        
+        (function(){
+            const checkbox = document.getElementById('medicos');
+            
+            checkbox.addEventListener('change', function(){
+                this.parentElement.classList.toggle('checked');
+            })    
+            
+            const app = document.getElementById('historia_nombre');
+            const search_toggle = document.getElementById('search_toggle');
+            let forms = document.querySelectorAll('form');
+            const form_name = document.getElementById('form_name');
+            const form_dni = document.getElementById('form_dni');
+
+            let item_search = document.querySelectorAll('.insight_search a');
+
+            search_toggle.addEventListener('click', function(){
+                app.classList.toggle('active_search');
+            });
+
+            item_search.forEach(function(k, v){
+
+                k.addEventListener('click', function(){
+                    item_search.forEach(function(c){
+                        c.classList.remove('active');
+                    });
+
+                    k.classList.toggle('active');
+
+                    if(k.classList.contains('name')){
+                        remove_form()
+                        form_name.classList.add('active');
+
+                    }else if(k.classList.contains('dni')){
+                        remove_form()
+                        form_dni.classList.add('active');
+
+                    }else if(k.classList.contains('qr')){
+                        remove_form()
+                    }
+                })
+            })
+
+            function remove_form(){                
+                forms.forEach(function(d){
+                            d.classList.remove('active');
+                        });
+            }
+            //Slider
+            $(document).ready(function(){
+                $('.slick_items_table').slick({
+                    infinite: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    dots: true,
+                    arrows: false,
+                    mobileFirst: true,
+                    responsive:[
+                        {
+                            breakpoint: 1024,
+                            settings: "unslick",
+                        }
+                    ]
+                });
+            });
+            //Slider
+        })();
+
+    </script>
+</body>
+</html>
