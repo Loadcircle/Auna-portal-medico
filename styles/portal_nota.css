@@ -1,0 +1,147 @@
+#portal_nota div.perfil_client{
+    padding: 80px 50px 20px;
+    background: var(--background);
+    display: flex;
+}
+#portal_nota div.content_layout{
+    padding: 0 50px 25px;
+    background: var(--background);
+}
+#portal_nota div.content_layout div.header_tab{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#portal_nota div.content_layout div.header_tab > a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'dinpro-medium';
+    color: var(--blue);
+    height: 40px;
+}
+#portal_nota div.content_layout div.header_tab > a.active{
+    background: var(--blue);
+    color: #fff;
+    border-radius: 7px;
+    margin: 0 5px;
+}
+#portal_nota div.content_layout div.header_tab > a:nth-last-child(1){
+    width: 40%;
+}
+#portal_nota div.content_layout div.header_tab > a:nth-child(1), #portal_nota div.content_layout div.header_tab > a:nth-child(6){
+    width: 75%;;
+}
+#portal_nota div.content_layout div.header_tab > a:nth-child(7), #portal_nota div.content_layout div.header_tab > a:nth-child(8){
+    width: 55%;
+}
+#portal_nota div.content_layout div.header_tab > a:nth-child(3){
+    width: 110%;    
+}
+#portal_nota div.content_layout div.header_tab > a:nth-child(5){
+    width: 110%;
+}
+
+
+#portal_nota .grid_menu{
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+}
+#portal_nota .grid_menu button#historial{
+    background: none;
+    border: none;
+    color: var(--grey);
+    position: relative;
+    cursor: pointer;
+}
+#portal_nota .grid_menu button#historial:before{
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    background-color: var(--blue);
+    background-image: url(//via.placeholder.com/15x15);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -2px;
+    right: -22px;
+}
+#portal_nota .grid_menu.active button#historial{
+    margin-left: 30px;
+}
+#portal_nota .grid_menu.active button#historial:before{
+    right: auto;
+    left: -22px;
+}
+
+#portal_nota .grid_menu .visualizacion{
+    margin: 0;
+    margin-left: 20px;
+}
+#portal_nota .grid_menu.active .visualizacion{
+    text-align: right;    
+}
+#portal_nota .grid_menu #menu_historial{
+    margin-top: 20px;
+}
+#portal_nota .grid_menu.active #menu_historial{
+    display: none;
+}
+#portal_nota .grid_menu #menu_historial form input:not([type="submit"]){
+   width: 200px;
+   height: 45px;
+   border-radius: 10px;  box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
+   background-color: #ffffff;
+   color: var(--blue);
+   font-size: 15px;
+   font-family: 'dinpro-medium';
+   border: none;
+   margin: 5px;
+   padding-left: 15px;
+   box-sizing: border-box;
+}
+#portal_nota .grid_menu #menu_historial form label.submit{
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, #ffffff, #e9e9e9);
+    height: 45px;
+    width: 45px;
+    border: solid 1px #e9e9e9;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    margin: 5px;
+}
+#portal_nota .grid_menu #menu_historial form label.submit img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+#portal_nota .grid_menu #menu_historial form input[type="submit"]{
+    color: transparent;
+    background: none;
+    border: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+#portal_nota .grid_menu .window_info{
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+#portal_nota .grid_menu.active .window_info{
+    grid-column: 1/4;
+}

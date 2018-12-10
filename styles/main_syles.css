@@ -93,6 +93,123 @@ h6{
     display: none!important;
 }
 
+
+
+/* Estilos Nav */
+nav{
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--blue);
+    height: 60px;
+    z-index: 15;
+    top: 0;
+    left: 0;
+}
+nav .logo{
+    width: 120px;
+    margin: 15px 50px;
+    margin-right: 25px;
+}
+nav#main_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav#main_nav > div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+nav#main_nav>div > p{
+    font-size: 15px;
+    color: #fff;
+    font-family: 'dinpro-bold'
+}
+nav#main_nav>div.bell{
+    cursor: pointer;
+    background: var(--blue_b);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    position: relative;
+    margin-left: 30%;
+}
+nav#main_nav>div.bell.active:before{
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: -1px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #c60000;
+}
+nav#main_nav>div ul{
+    position: absolute;
+    top: 45px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: var(--blue_b);
+    border-radius: 10px;
+    z-index: 1;
+}
+nav#main_nav>div ul{
+    display: none;
+}
+nav#main_nav>div.active ul{
+    display: block;
+}
+nav#main_nav>div ul li{
+    list-style: none;
+    margin: 8px;
+    font-size: 15px;
+    font-family: 'dinpro-medium';
+    color: #fff;
+}
+nav#main_nav>div > span{
+    font-size: 15px;
+    font-family: 'dinpro-medium';
+    color: #fff;
+    margin-right: 30px;
+}
+nav#main_nav>div.clinica{
+    border-radius: 10px;
+    background-color: #099ab4;
+    width: 200px;
+    height: 40px;
+    justify-content: center;
+    cursor: pointer;
+}
+nav#main_nav>div.perfil{
+    margin-right: 50px;
+    width: 200px;
+    cursor: pointer;
+}
+nav#main_nav>div.perfil img{
+    margin-right: 10px;
+}
+nav#main_nav>div.perfil:before, nav#main_nav>div.clinica:before{
+    content: '';
+    background: url(../assets/arrow_donw.png);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    margin: auto;
+}
+/* Estilos Nav */
+
+
+
+
 @media (max-width: 1024px){
     .only_mobile{
         display: flex!important;

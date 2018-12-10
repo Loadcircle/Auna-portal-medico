@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portal medico nota</title>
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="styles/main_syles.css">
+
+    <!-- Estilos de vista -->
+    <link rel="stylesheet" href="styles/portal_nota.css">
+
+</head>
+<body>
+
+    <div id="portal_nota">
+        <nav id="main_nav">
+            <div>
+                <img class="logo" src="assets/logo_blanco.png" alt="logo">
+                <p>| Historia Clínica</p>
+            </div>
+
+            <div class="bell active toggle_menu">
+                <img width="22px" src="assets/bell.png" alt="bell">
+            </div>
+            
+            <div class="clinica toggle_menu">
+                <span>Clinica Delgado</span>
+                <ul>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                </ul>
+            </div>
+
+            <div class="perfil toggle_menu">
+                <img width="40px" src="assets/person.png" alt="persona">
+                <span>Dr. Zegarra</span>
+                <ul>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="perfil_client">
+            <div class="perfil_picture">
+                <img src="//via.placeholder.com/165x165" alt="perfil">
+            </div>
+
+            <div class="perfil_info">
+
+            </div>
+        </div>
+
+        <div class="content_layout">
+            <div class="header_tab">
+                <a class="active" href="#">Nota de ingreso</a>
+                <a href="#">Control de func. vitales</a>
+                <a href="#">Evolución hospitalización</a>
+                <a href="#">Informe operatorio</a>
+                <a href="#">Anotaciones de enfermería</a>
+                <a href="#">Balance hídrico</a>
+                <a href="#">Laboratorio</a>
+                <a href="#">Imágenes</a>
+                <a href="#">
+                    <img src="//via.placeholder.com/25x25" alt="">
+                </a>
+            </div>
+
+            <div class="grid_menu">
+                <div>
+                    <button id="historial">Historial</button>
+                </div>
+                <div>
+                    <p class="visualizacion">Visualización</p>
+                </div>
+
+                <div id="menu_historial">
+                    <div>
+                        <form action="#">
+                            <input type="date">
+                            <input type="date">
+                            <label class="submit" for="submit">
+                                <input type="submit" id="submit">
+                                <img src="//via.placeholder.com/20x20" alt="buscar">
+                            </label>                            
+                        </form>
+                        <div class="list_items">
+                            <div class="list_item">
+                                <p class="item_head">01 / 04 / 2015</p>
+                                <ul class="item-content">
+                                    <li>10:00 am</li>
+                                    <li>14:00 pm</li>
+                                    <li>18:00 pm</li>                                        
+                                </ul>
+                            </div>
+                            <div class="list_item">
+                                <p class="item_head">01 / 04 / 2015</p>
+                                <ul class="item-content">
+                                    <li>10:00 am</li>
+                                    <li>14:00 pm</li>
+                                    <li>18:00 pm</li>                                        
+                                </ul>
+                            </div>
+                            <div class="list_item">
+                                <p class="item_head">01 / 04 / 2015</p>
+                                <ul class="item-content">
+                                    <li>10:00 am</li>
+                                    <li>14:00 pm</li>
+                                    <li>18:00 pm</li>                                        
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="//via.placeholder.com/15x15" alt="">
+                            <p>Actualizado: 16-11-18</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="window_info">
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Javascript toda web -->
+    <script src="js/main_app.js"></script>
+    <script>
+        
+        (function(){
+            let button_historial = document.getElementById('historial');
+            let menu_historial = document.getElementById('menu_historial');
+            let grid_menu = document.querySelectorAll('.grid_menu');
+            const app_portal = document.getElementById('portal_nota');
+
+            button_historial.addEventListener('click', function(){
+                grid_menu.forEach(function(k){
+                    k.classList.toggle('active');
+                });
+            });
+        })();
+
+    </script>
+</body>
+</html>
