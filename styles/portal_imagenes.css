@@ -1,17 +1,17 @@
-#portal_nota, body{
+#portal_imagenes, body{
     background: var(--background);
 }
-#portal_nota div.perfil_client{
+#portal_imagenes div.perfil_client{
     padding: 80px 50px 10px;
     background: var(--background);
     display: flex;
     position: relative;
     z-index: 1;
 }
-#portal_nota div.perfil_client .perfil_picture{
+#portal_imagenes div.perfil_client .perfil_picture{
     width: 165px;
 }
-#portal_nota div.perfil_client .perfil_info{
+#portal_imagenes div.perfil_client .perfil_info{
     width: 86%;
     box-sizing: border-box;
     margin-left: 20px;
@@ -20,46 +20,46 @@
     padding: 15px 30px;
     box-sizing: border-box;
 }
-#portal_nota div.perfil_info > div > div:nth-child(2){
+#portal_imagenes div.perfil_info > div > div:nth-child(2){
     min-width: 280px;
     padding-left: 40px;
     border-left: solid 1px #dddddd;
     border-right: solid 1px #dddddd;
 }
-#portal_nota div.perfil_info > div > div:nth-child(2)>div{
+#portal_imagenes div.perfil_info > div > div:nth-child(2)>div{
     display: flex;
     align-items: center;
 }
-#portal_nota div.perfil_info > div > div:nth-child(2)>div >p:nth-child(1){
+#portal_imagenes div.perfil_info > div > div:nth-child(2)>div >p:nth-child(1){
     min-width: 110px
 }
-#portal_nota div.perfil_info > div > div:nth-child(3) > a{
+#portal_imagenes div.perfil_info > div > div:nth-child(3) > a{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#portal_nota div.perfil_info > div > div:nth-child(3) > a p{
+#portal_imagenes div.perfil_info > div > div:nth-child(3) > a p{
     max-width: 113px;
     margin: 0 15px;
     font-size: 15px;
 }
-#portal_nota div.perfil_client .perfil_info h2{
+#portal_imagenes div.perfil_client .perfil_info h2{
     margin: 0;
 }
-#portal_nota div.perfil_client .perfil_info>div{
+#portal_imagenes div.perfil_client .perfil_info>div{
     display: flex;    
     justify-content: space-between;
     align-items: center;
 }
-#portal_nota div.perfil_client .perfil_info>div p span{
+#portal_imagenes div.perfil_client .perfil_info>div p span{
     color: var(--blue);
     font-family: 'dinpro-medium'
 }
-#portal_nota div.perfil_client .perfil_info>div p{
+#portal_imagenes div.perfil_client .perfil_info>div p{
     margin: 5px 0;
     font-size: 15px;
 }
-#portal_nota div.content_layout div.header_tab{
+#portal_imagenes div.content_layout div.header_tab{
     display: flex;
     align-items: center;
     width: 100%;
@@ -67,7 +67,7 @@
     background: var(--background);
     box-sizing: border-box;
 }
-#portal_nota div.content_layout div.header_tab > a{
+#portal_imagenes div.content_layout div.header_tab > a{
     width: 100%;
     display: flex;
     align-items: center;
@@ -78,51 +78,51 @@
     color: var(--blue);
     height: 40px;
 }
-#portal_nota div.content_layout div.header_tab > a.active{
+#portal_imagenes div.content_layout div.header_tab > a.active{
     background: var(--blue);
     color: #fff;
     border-radius: 7px;
     margin: 0 5px;
 }
-#portal_nota div.content_layout div.header_tab > a:nth-last-child(1){
+#portal_imagenes div.content_layout div.header_tab > a:nth-last-child(1){
     width: 40%;
 }
-#portal_nota div.content_layout div.header_tab > a:nth-child(1), #portal_nota div.content_layout div.header_tab > a:nth-child(6){
+#portal_imagenes div.content_layout div.header_tab > a:nth-child(1), #portal_imagenes div.content_layout div.header_tab > a:nth-child(6){
     width: 75%;;
 }
-#portal_nota div.content_layout div.header_tab > a:nth-child(7), #portal_nota div.content_layout div.header_tab > a:nth-child(8){
+#portal_imagenes div.content_layout div.header_tab > a:nth-child(7), #portal_imagenes div.content_layout div.header_tab > a:nth-child(8){
     width: 55%;
 }
-#portal_nota div.content_layout div.header_tab > a:nth-child(3){
+#portal_imagenes div.content_layout div.header_tab > a:nth-child(3){
     width: 110%;    
 }
-#portal_nota div.content_layout div.header_tab > a:nth-child(5){
+#portal_imagenes div.content_layout div.header_tab > a:nth-child(5){
     width: 110%;
 }
 
 
-#portal_nota .grid_menu{
+#portal_imagenes .grid_menu{
     display: grid;
     grid-template-columns: 1fr 3.5fr;
 }
-#portal_nota .grid_menu > div:nth-child(1){
+#portal_imagenes .grid_menu > div:nth-child(1){
     padding-left: 50px;
     background: var(--background);
     height: 40px;
 }
-#portal_nota .grid_menu > div:nth-child(2){
+#portal_imagenes .grid_menu > div:nth-child(2){
     background: var(--background);
     padding-right: 50px;
     height: 40px;
 }
-#portal_nota .grid_menu button#historial{
+#portal_imagenes .grid_menu button#historial{
     background: none;
     border: none;
     color: var(--grey);
     position: relative;
     cursor: pointer;
 }
-#portal_nota .grid_menu button#historial:before{
+#portal_imagenes .grid_menu button#historial:before{
     content: '';
     position: absolute;
     width: 22px;
@@ -135,14 +135,14 @@
     top: -2px;
     right: -22px;
 }
-#portal_nota .grid_menu.active button#historial{
+#portal_imagenes .grid_menu.active button#historial{
     margin-left: 30px;
 }
-#portal_nota .grid_menu.active button#historial:before{
+#portal_imagenes .grid_menu.active button#historial:before{
     right: auto;
     left: -22px;
 }
-#portal_nota .content_layout{
+#portal_imagenes .content_layout{
     position: fixed;
     left: 0;
     width: 100%;
@@ -152,34 +152,34 @@
     box-sizing: border-box;
     z-index: 2;
 }
-#portal_nota .content_layout>div.padding-left{
+#portal_imagenes .content_layout>div.padding-left{
     height: 198px;
     width: 100%;
     position: relative;
 }
-#portal_nota .content_layout>div.padding-left>a{
+#portal_imagenes .content_layout>div.padding-left>a{
     width: 237px;
     height: 45px;
     position: absolute;
     bottom: 60px;
     right: 82px;
 }
-#portal_nota .grid_menu .visualizacion{
+#portal_imagenes .grid_menu .visualizacion{
     margin: 0;
     margin-left: 20px;
 }
-#portal_nota .grid_menu.active .visualizacion{
+#portal_imagenes .grid_menu.active .visualizacion{
     text-align: right;    
 }
-#portal_nota .grid_menu #menu_historial{
+#portal_imagenes .grid_menu #menu_historial{
     padding-right: 15px;
     padding-left: 50px;
     background: var(--background);
 }
-#portal_nota .grid_menu.active #menu_historial{
+#portal_imagenes .grid_menu.active #menu_historial{
     display: none;
 }
-#portal_nota .grid_menu #menu_historial form input:not([type="submit"]){
+#portal_imagenes .grid_menu #menu_historial form input:not([type="submit"]){
    width: 200px;
    height: 45px;
    border-radius: 10px;  box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
@@ -192,7 +192,7 @@
    padding-left: 15px;
    box-sizing: border-box;
 }
-#portal_nota .grid_menu #menu_historial form label.submit{
+#portal_imagenes .grid_menu #menu_historial form label.submit{
     border-radius: 10px;
     background-image: linear-gradient(to bottom, #ffffff, #e9e9e9);
     height: 45px;
@@ -203,7 +203,7 @@
     cursor: pointer;
     margin: 5px;
 }
-#portal_nota .grid_menu #menu_historial form label.submit img{
+#portal_imagenes .grid_menu #menu_historial form label.submit img{
     position: absolute;
     top: 0;
     left: 0;
@@ -212,7 +212,7 @@
     margin: auto;
     z-index: 1;
 }
-#portal_nota .grid_menu #menu_historial form input[type="submit"]{
+#portal_imagenes .grid_menu #menu_historial form input[type="submit"]{
     color: transparent;
     background: none;
     border: none;
@@ -224,11 +224,11 @@
     left: 0;
     cursor: pointer;
 }
-#portal_nota .grid_menu #menu_historial form{
+#portal_imagenes .grid_menu #menu_historial form{
     display: flex;
     flex-wrap: wrap;
 }
-#portal_nota .grid_menu .window_info{
+#portal_imagenes .grid_menu .window_info{
     padding-top: 20px;
     padding-right: 50px;
     box-sizing: border-box;
@@ -237,17 +237,17 @@
     overflow-y: auto;
     max-height: calc(100vh - 230px);
 }
-#portal_nota .content_view{
+#portal_imagenes .content_view{
     background: #fff;
     border-radius: 10px;
     padding: 30px 40px;
 }
-#portal_nota .grid_menu.active .window_info{
+#portal_imagenes .grid_menu.active .window_info{
     grid-column: 1/4;
     padding-left: 100px;
 }
 
-#portal_nota #menu_historial .list_items{
+#portal_imagenes #menu_historial .list_items{
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
@@ -256,30 +256,30 @@
     max-width: 260px;
     padding: 20px 30px;
 }
-#portal_nota #menu_historial .actualizado{
+#portal_imagenes #menu_historial .actualizado{
     display: flex;
     align-items: center;
     margin-top: 30px;
 }
-#portal_nota #menu_historial .actualizado p{
+#portal_imagenes #menu_historial .actualizado p{
     color: var(--grey);
     font-size: 15px;
     margin: 0;
     margin-left: 10px;
     font-family: 'dinpro-medium';
 }
-#portal_nota #menu_historial .list_item .item_head{
+#portal_imagenes #menu_historial .list_item .item_head{
     margin: 5px 0;
 }
-#portal_nota #menu_historial .list_item .item_head a{
+#portal_imagenes #menu_historial .list_item .item_head a{
     font-size: 15px;
     color: var(--grey);
 }
-#portal_nota #menu_historial .list_item.active .item_head a{
+#portal_imagenes #menu_historial .list_item.active .item_head a{
     color: var(--blue);
     font-family: 'dinpro-medium';
 }
-#portal_nota #menu_historial .list_item .item-content{
+#portal_imagenes #menu_historial .list_item .item-content{
     display: none; 
     border-radius: 5px;
     background-image: linear-gradient(to bottom, #ffffff, #f8f8f8);
@@ -290,65 +290,65 @@
     box-sizing: border-box;
     max-width: 175px;
 }
-#portal_nota #menu_historial .list_item.active .item-content{
+#portal_imagenes #menu_historial .list_item.active .item-content{
     display: block;
 }
-#portal_nota #menu_historial .list_item .item-content li{
+#portal_imagenes #menu_historial .list_item .item-content li{
     list-style: none;    
 }
-#portal_nota #menu_historial .list_item .item-content li a{
+#portal_imagenes #menu_historial .list_item .item-content li a{
     font-size: 15px;
     color: var(--grey);
 }
-#portal_nota #menu_historial .list_item .item-content li a.active{
+#portal_imagenes #menu_historial .list_item .item-content li a.active{
     color: var(--blue);
     font-family: 'dinpro-medium';
 }
 
-#portal_nota #menu_historial .list_items::-webkit-scrollbar{
+#portal_imagenes #menu_historial .list_items::-webkit-scrollbar{
     width: 0;
 }
 
-#portal_nota .grid_menu .window_info::-webkit-scrollbar{
+#portal_imagenes .grid_menu .window_info::-webkit-scrollbar{
     width: 0;
 }
-#portal_nota .content_layout::-webkit-scrollbar{
+#portal_imagenes .content_layout::-webkit-scrollbar{
     width: 0;
 }
-#portal_nota .bg_div{
+#portal_imagenes .bg_div{
     height: 60px;
     width: 100%;
     background: var(--background)
 }
-#portal_nota .content_view > div > div.antecedentes_box{
+#portal_imagenes .content_view > div > div.antecedentes_box{
     display: flex;
 }
-#portal_nota .content_view *{
+#portal_imagenes .content_view *{
     font-size: 15px;
 }
-#portal_nota .content_view .title_cb{
+#portal_imagenes .content_view .title_cb{
     color: var(--blue);
     font-family: 'dinpro-medium';
     font-size: 15px;
 }
-#portal_nota .content_layout .content_bg{  
+#portal_imagenes .content_layout .content_bg{  
     border-radius: 5px;
     background-image: linear-gradient(to bottom, #ffffff, #f8f8f8);
     padding: 15px;
     border: solid 1px #eceaea99;
     min-height: 100px;
 }
-#portal_nota .content_view > div > div > div{
+#portal_imagenes .content_view > div > div > div{
     width: 100%;
     box-sizing: border-box;
     margin: 5px;
 }
-#portal_nota .content_view > div > div.diagnostico_o_box{
+#portal_imagenes .content_view > div > div.diagnostico_o_box{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-#portal_nota .content_view > div > div.diagnostico_o_box>div{
+#portal_imagenes .content_view > div > div.diagnostico_o_box>div{
     display: block;
     min-height: auto;
     width: auto;
@@ -356,15 +356,15 @@
     min-height: 30px;
 }
 
-#portal_nota .content_view > div > div.plan_box>div{
+#portal_imagenes .content_view > div > div.plan_box>div{
     display: flex;
     align-items: center;
 }
-#portal_nota .content_view > div > div.plan_box>div>div{
+#portal_imagenes .content_view > div > div.plan_box>div>div{
     display: flex;
     align-items: center;
 }
-#portal_nota .content_view > div > div.plan_box>div span{
+#portal_imagenes .content_view > div > div.plan_box>div span{
     width: 20px;
     height: 20px;
     display: block;
@@ -375,68 +375,68 @@
 }
 
 @media (max-width: 1024px){
-    #portal_nota div.perfil_client{
+    #portal_imagenes div.perfil_client{
         padding: 80px 20px 10px
     }
-    #portal_nota > div.perfil_client > div.perfil_info > div > div:nth-child(1) > p:nth-child(1) > span{
+    #portal_imagenes > div.perfil_client > div.perfil_info > div > div:nth-child(1) > p:nth-child(1) > span{
         display: none;
     }
-    #portal_nota div.perfil_client .perfil_info>div{
+    #portal_imagenes div.perfil_client .perfil_info>div{
         display: block;
     }
-    #portal_nota div.perfil_info > div > div:nth-child(2){
+    #portal_imagenes div.perfil_info > div > div:nth-child(2){
         display: none;
     }
-    #portal_nota div.perfil_info > div > div:nth-child(3){
+    #portal_imagenes div.perfil_info > div > div:nth-child(3){
         display: none;
     }
-    #portal_nota div.perfil_client .perfil_info>div p:not(:nth-child(1)){
+    #portal_imagenes div.perfil_client .perfil_info>div p:not(:nth-child(1)){
         display: none;
     }
-    #portal_nota div.perfil_client .perfil_info{
+    #portal_imagenes div.perfil_client .perfil_info{
         background: none;
         padding: 0;
     }
-    #portal_nota div.content_layout div.header_tab{
+    #portal_imagenes div.content_layout div.header_tab{
         display: none;
     }
-    #portal_nota #menu_historial .list_items{
+    #portal_imagenes #menu_historial .list_items{
         display: none;
     }
-    #portal_nota .grid_menu > div:nth-child(1){
+    #portal_imagenes .grid_menu > div:nth-child(1){
         display: none;
     }
-    #portal_nota .grid_menu > div:nth-child(2){
+    #portal_imagenes .grid_menu > div:nth-child(2){
         display: none;
     }
-    #portal_nota #menu_historial .actualizado{
+    #portal_imagenes #menu_historial .actualizado{
         display: none;
     }
-    #portal_nota .grid_menu{
+    #portal_imagenes .grid_menu{
         display: block;
     }
-    #portal_nota .grid_menu #menu_historial{
+    #portal_imagenes .grid_menu #menu_historial{
         padding: 0 15px 15px;
     }
-    #portal_nota .grid_menu .window_info{
+    #portal_imagenes .grid_menu .window_info{
         padding: 0 15px;  
         box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.05);
         max-height: calc(100vh - 215px);
     }
-    #portal_nota .bg_div{
+    #portal_imagenes .bg_div{
         height: 20px;
     }
-    #portal_nota .content_layout{
+    #portal_imagenes .content_layout{
         position: relative;
         padding-top: 0;
         overflow: hidden;
         top: 0;
         height: auto;
     }
-    #portal_nota .content_view{
+    #portal_imagenes .content_view{
         padding: 18px;
     }
-    #portal_nota .grid_menu #menu_historial form input:not([type="submit"]){
+    #portal_imagenes .grid_menu #menu_historial form input:not([type="submit"]){
         width: calc(100% - 70px);
     }
     nav.only_mobile{
@@ -449,17 +449,17 @@
         font-size: 20px;
     }
 
-    #portal_nota .content_view > div > div.antecedentes_box{
+    #portal_imagenes .content_view > div > div.antecedentes_box{
         flex-wrap: wrap;
     }
-    #portal_nota .content_view > div > div.diagnostico_o_box>div{
+    #portal_imagenes .content_view > div > div.diagnostico_o_box>div{
         min-height: 100px;
         width: 100%;
     }
-    #portal_nota .content_view > div > div.plan_box>div{
+    #portal_imagenes .content_view > div > div.plan_box>div{
         flex-wrap: wrap;
     }
-    #portal_nota .content_layout>div.padding-left{
+    #portal_imagenes .content_layout>div.padding-left{
         display: none;
     }
 }

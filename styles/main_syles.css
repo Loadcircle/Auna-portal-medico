@@ -42,15 +42,15 @@ p{
 strong{
     font-family: 'dinpro-bold';
 }
-h1{
+/* h1{
 
-}
+} */
 h2{
     font-size: 25px;
     font-family: 'dinpro-black';
     color: var(--blue);
 }
-h3{
+/* h3{
 
 }
 h4{
@@ -61,7 +61,7 @@ h5{
 }
 h6{
 
-}
+} */
 .medium{
     font-family: 'dinpro-medium';
 }
@@ -92,8 +92,10 @@ h6{
 .only_mobile{
     display: none!important;
 }
-
-
+.red{
+    color: #c60000;
+    font-family: 'dinpro-medium'
+}
 
 /* Estilos Nav */
 nav{

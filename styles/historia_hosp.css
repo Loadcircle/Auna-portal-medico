@@ -1,12 +1,12 @@
 body{
     background: var(--background);
 }
-#historia_nombre{
+#historia_hosp{
     background: var(--background);
     min-height: 100vh;
 }
 
-#historia_nombre .holder_view{
+#historia_hosp .holder_view{
     position: fixed;
     width: 100%;
     top: 0;
@@ -17,12 +17,12 @@ body{
     z-index: 10;
 }
 
-#historia_nombre .holder_view .search h2{
+#historia_hosp .holder_view .search h2{
     margin: 0;
     position: relative;
     padding: 95px 0 0 95px;
 }
-#historia_nombre .holder_view .search h2:before{
+#historia_hosp .holder_view .search h2:before{
     content: url(//via.placeholder.com/20x20);
     position: absolute;
     top: 95px;
@@ -31,17 +31,17 @@ body{
     margin: auto;
     height: fit-content;
 }
-#historia_nombre  div.insight_search{
+#historia_hosp  div.insight_search{
     margin-top: 25px;
     padding: 0 95px;
 }
-#historia_nombre  div.menu_table{
+#historia_hosp  div.menu_table{
     padding: 0 50px;
 }
-#historia_nombre  div.insight_search > div{
+#historia_hosp  div.insight_search > div{
     display: flex;
 }
-#historia_nombre  div.insight_search > div a{
+#historia_hosp  div.insight_search > div a{
     color: var(--blue);
     font-size: 15px;
     font-family: 'dinpro-medium';
@@ -50,21 +50,21 @@ body{
     display: flex;
     justify-content: center;
 }
-#historia_nombre  div.insight_search > div a.active{
+#historia_hosp  div.insight_search > div a.active{
     color: #fff;
     width: fit-content;
     border-radius: 7px;
     background: var(--blue);
 }
-#historia_nombre div.insight_search form{
+#historia_hosp div.insight_search form{
     margin-top: 15px;
     align-items: center;
     display: none;
 }
-#historia_nombre div.insight_search form.active{
+#historia_hosp div.insight_search form.active{
     display: flex;
 }
-#historia_nombre div.insight_search form input:not([type="checkbox"]):not([type="submit"]), #historia_nombre div.insight_search form select{  
+#historia_hosp div.insight_search form input:not([type="checkbox"]):not([type="submit"]), #historia_hosp div.insight_search form select{  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,15 +80,15 @@ body{
     font-size: 15px;
     font-family: 'dinpro-medium';
 }
-#historia_nombre div.insight_search form select{
+#historia_hosp div.insight_search form select{
     padding-left: 170px;
 }
-#historia_nombre div.insight_search form > div{
+#historia_hosp div.insight_search form > div{
     position: relative;
     margin-right: 10px;
 }
 
-#historia_nombre div.insight_search form > div:before{
+#historia_hosp div.insight_search form > div:before{
     content: 'Nombres:';
     position: absolute;
     left: 25px;
@@ -101,16 +101,16 @@ body{
     opacity: .5;
     height: fit-content;
 }
-#historia_nombre div.insight_search form > div:nth-child(2):before{
+#historia_hosp div.insight_search form > div:nth-child(2):before{
     content: 'Apellidos:'
 }
-#historia_nombre div.insight_search form#form_dni > div:before{
+#historia_hosp div.insight_search form#form_dni > div:before{
     content: 'Tipo de documento:'
 }
-#historia_nombre div.insight_search form#form_dni > div:nth-child(2):before{
+#historia_hosp div.insight_search form#form_dni > div:nth-child(2):before{
     content: 'N° doc:'
 }
-#historia_nombre div.insight_search form input[type="submit"]{  
+#historia_hosp div.insight_search form input[type="submit"]{  
     display: flex;
     width: 151px;
     height: 40px;
@@ -125,16 +125,16 @@ body{
     margin-right: 75px;
     cursor: pointer;
 }
-#historia_nombre div.insight_search form label{
+#historia_hosp div.insight_search form label{
     position: relative;
     font-size: 15px;
     color: var(--grey);
     cursor: pointer;
 }
-#historia_nombre div.insight_search form label input[type="checkbox"]{
+#historia_hosp div.insight_search form label input[type="checkbox"]{
 	visibility: hidden;	
 }
-#historia_nombre div.insight_search form label:before{
+#historia_hosp div.insight_search form label:before{
 	content: '';
     position: absolute;
     left: -10px;
@@ -145,7 +145,7 @@ body{
     border-radius: 7px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(128, 128, 128, 0.25));
 }
-#historia_nombre div.insight_search form label:after{
+#historia_hosp div.insight_search form label:after{
     content: url(https://cdn2.hubspot.net/hubfs/4875661/Landing%20Principios%20Gerenciales/check.png?t=1542904457434);
     position: absolute;
     left: -3.1px;
@@ -155,14 +155,14 @@ body{
     cursor: pointer;
   	opacity: 0;
 }
-#historia_nombre div.insight_search form label.checked:after{
+#historia_hosp div.insight_search form label.checked:after{
 	opacity: 1;
 }
-#historia_nombre .items_menu_table{    
+#historia_hosp .items_menu_table{    
     display: flex;
     margin-top: 15px;
 }
-#historia_nombre .items_menu_table a{
+#historia_hosp .items_menu_table a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,15 +175,15 @@ body{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-#historia_nombre .items_menu_table a p{
+#historia_hosp .items_menu_table a p{
     font-family: 'dinpro-bold'
 }
-#historia_nombre .items_menu_table a.active{
+#historia_hosp .items_menu_table a.active{
     background: #fff;
     opacity: 1;
     font-family: 'dinpro-bold';
 }
-#historia_nombre div.menu_table > div:nth-child(2){
+#historia_hosp div.menu_table > div:nth-child(2){
     display: flex;
     background: #fff;
     border-top-right-radius: 10px;
@@ -191,14 +191,14 @@ body{
     align-items: center;
     position: relative;
 }
-#historia_nombre div.menu_table > div:nth-child(2) p{
+#historia_hosp div.menu_table > div:nth-child(2) p{
     width: 100%;
     font-size: 15px;
     color: var(--blue);
     font-family: 'dinpro-black';
     text-align: center;
 }
-#historia_nombre div.menu_table > div:nth-child(2) hr{
+#historia_hosp div.menu_table > div:nth-child(2) hr{
     width: calc(100% - 25px);
     margin: auto;
     height: .5px;
@@ -209,23 +209,23 @@ body{
     left: 12.5px;
 }
 
-#historia_nombre .table{
+#historia_hosp .table{
     margin: 50px;
     box-sizing: border-box;
     padding-top: 355px;
     margin-top: 0;    
 }
-#historia_nombre .items_table{
+#historia_hosp .items_table{
     background: var(--background);
 }
-#historia_nombre .item_table{
+#historia_hosp .item_table{
     display: flex;
     padding: 0 45px;
     align-items: center;
     background: #fff;
     position: relative;
 }
-#historia_nombre .item_table hr.last_hr{
+#historia_hosp .item_table hr.last_hr{
     position: absolute;
     bottom: 0;
     width: 98%;
@@ -237,43 +237,43 @@ body{
     background: var(--grey);
     opacity: .25;
 }
-#historia_nombre .item_table:nth-last-child(1) hr.last_hr{
+#historia_hosp .item_table:nth-last-child(1) hr.last_hr{
     display: none;
 }
-#historia_nombre .item_table > div{
+#historia_hosp .item_table > div{
     width: 100%;
     text-align: center;
 }
-#historia_nombre .item_table > div:nth-child(2), 
-#historia_nombre .item_table > div:nth-child(3), 
-#historia_nombre .item_table > div:nth-child(6),
-#historia_nombre .item_table > div:nth-child(10),
-#historia_nombre div.menu_table > div:nth-child(2) p:nth-child(2),
-#historia_nombre div.menu_table > div:nth-child(2) p:nth-child(3),
-#historia_nombre div.menu_table > div:nth-child(2) p:nth-child(6),
-#historia_nombre div.menu_table > div:nth-child(2) p:nth-child(12){
+#historia_hosp .item_table > div:nth-child(2), 
+#historia_hosp .item_table > div:nth-child(3), 
+#historia_hosp .item_table > div:nth-child(6),
+#historia_hosp .item_table > div:nth-child(10),
+#historia_hosp div.menu_table > div:nth-child(2) p:nth-child(2),
+#historia_hosp div.menu_table > div:nth-child(2) p:nth-child(3),
+#historia_hosp div.menu_table > div:nth-child(2) p:nth-child(6),
+#historia_hosp div.menu_table > div:nth-child(2) p:nth-child(12){
     width: 50%;
 }
-#historia_nombre .item_table > div *{
+#historia_hosp .item_table > div *{
     text-align: center;
 }
-#historia_nombre .item_table > div p{
+#historia_hosp .item_table > div p{
     font-size: 15px;
 }
-#historia_nombre .item_table > div img{    
+#historia_hosp .item_table > div img{    
     padding: 10px;
     background: var(--green);
     border-radius: 10px;
 }
-#historia_nombre .item_table > div.slick_items_table{
+#historia_hosp .item_table > div.slick_items_table{
     width: 300%;
     display: flex;
     align-items: center;
 }
-#historia_nombre .item_table > div.slick_items_table > div{
+#historia_hosp .item_table > div.slick_items_table > div{
     width: 100%;
 }
-#historia_nombre .item_table > div.slick_items_table a{
+#historia_hosp .item_table > div.slick_items_table a{
     display: flex;
     color: #fff;
     width: 20px;
@@ -285,13 +285,13 @@ body{
     margin: 0 3.5px;
     align-items: center;
 }
-#historia_nombre .item_table > div.slick_items_table a.red{
+#historia_hosp .item_table > div.slick_items_table a.red{
     background-color: #c60000;
 }
-#historia_nombre .item_table > div.slick_items_table a.green{
+#historia_hosp .item_table > div.slick_items_table a.green{
     background-color: #78bc00;
 }
-#historia_nombre .item_table > div.slick_items_table a.yellow{
+#historia_hosp .item_table > div.slick_items_table a.yellow{
     background-color: #ffc400;
 }
 .slick_items_table > div > div > div{
@@ -305,7 +305,7 @@ body{
 /*Modales*/
 
 
-#historia_nombre .modal{
+#historia_hosp .modal{
     position: fixed;
     top: 0;
     left: 0;
@@ -319,10 +319,10 @@ body{
     display: none;
     overflow-y: auto;
 }
-#historia_nombre .modal.active{
+#historia_hosp .modal.active{
     display: flex;
 }
-#historia_nombre .modal > div{
+#historia_hosp .modal > div{
     background: #fff;
     max-width: 800px;
     padding: 40px 50px;
@@ -332,21 +332,21 @@ body{
     margin: 20px;
 }
 
-#historia_nombre .modal .menu_table{
+#historia_hosp .modal .menu_table{
     padding: 0;
 }
-#historia_nombre .modal .menu_table > div{
+#historia_hosp .modal .menu_table > div{
     display: flex;
     align-items: center;
     position: relative;
 }
-#historia_nombre .modal .menu_table > div > p{
+#historia_hosp .modal .menu_table > div > p{
     width: 100%;  
     font-size: 15px;
     font-family: 'dinpro-black';
     color: var(--blue);
 }
-#historia_nombre .modal .menu_table > div hr{
+#historia_hosp .modal .menu_table > div hr{
     position: absolute;
     width: calc(100% + 15px);
     left: -15px;
@@ -357,35 +357,35 @@ body{
     opacity: .25;
     height: 1.5px;
 }
-#historia_nombre .modal img.close_modal{
+#historia_hosp .modal img.close_modal{
     cursor: pointer;
     position: absolute;
     top: 40px;
     right: 40px;
 }
-#historia_nombre .modal .table{
+#historia_hosp .modal .table{
     margin: 0;
     padding: 0;
     background: none;
 }
-#historia_nombre  .modal .table .items_table{
+#historia_hosp  .modal .table .items_table{
     background: none;
 }
-#historia_nombre .modal .table .item_table{
+#historia_hosp .modal .table .item_table{
     padding: 0;
     min-height: 56px;
     height: auto;
 }
-#historia_nombre .modal .table .item_table > div{
+#historia_hosp .modal .table .item_table > div{
     width: 100%!important;
 }
-#historia_nombre .modal .table .item_table > div p{
+#historia_hosp .modal .table .item_table > div p{
     text-align: left;
 }
-#historia_nombre .modal .table .item_table > div:nth-child(3),#historia_nombre .modal .menu_table > div > p:nth-child(3){
+#historia_hosp .modal .table .item_table > div:nth-child(3),#historia_hosp .modal .menu_table > div > p:nth-child(3){
     width: 180%!important;
 }
-#historia_nombre .modal .table .item_table > div p.look__i{
+#historia_hosp .modal .table .item_table > div p.look__i{
     color: #fff;
     font-family: 'dinpro-bold';
     width: 75px;
@@ -397,7 +397,7 @@ body{
     border-radius: 10px;
     margin: auto;
 }
-#historia_nombre .item_table hr.last_hr{
+#historia_hosp .item_table hr.last_hr{
     width: calc(100% + 15px);
     left: -15px;
 }
@@ -409,18 +409,18 @@ body{
     #main_nav{
         display: none;
     }
-    #historia_nombre nav{
+    #historia_hosp nav{
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
     }
-    #historia_nombre nav h2{
+    #historia_hosp nav h2{
         color: #fff;  
         font-size: 20px;
         font-family: 'dinpro-black';
         margin: 0;
     }
-    #historia_nombre nav #search_toggle{
+    #historia_hosp nav #search_toggle{
         height: 100%;
         display: flex;
         align-items: center;
@@ -429,15 +429,15 @@ body{
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-    #historia_nombre div.menu_table > div:nth-child(2){
+    #historia_hosp div.menu_table > div:nth-child(2){
         display: none;
     }
-    #historia_nombre .items_table{
+    #historia_hosp .items_table{
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-    #historia_nombre .item_table{
+    #historia_hosp .item_table{
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 15px 15px 0;
@@ -445,14 +445,14 @@ body{
         border-radius: 10px;
         margin-top: 15px;
     }
-    #historia_nombre .item_table:nth-child(1){
+    #historia_hosp .item_table:nth-child(1){
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         border-top-left-radius: 0;
         margin-top: 0;
     }
-    #historia_nombre .items_menu_table a{
+    #historia_hosp .items_menu_table a{
         opacity: 1;
         width: 25%;
         max-height: 60px;
@@ -462,10 +462,10 @@ body{
         background: #fff;
         border-radius: 10px;
     }
-    #historia_nombre .items_menu_table a p{
+    #historia_hosp .items_menu_table a p{
         display: none;
     }
-    #historia_nombre .items_menu_table a.active{
+    #historia_hosp .items_menu_table a.active{
         width: 50%;
         border-radius: 0;
         margin: 0;
@@ -473,75 +473,75 @@ body{
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
     }
-    #historia_nombre .items_menu_table a.active p{
+    #historia_hosp .items_menu_table a.active p{
         display: initial;
         font-size: 20px;
         font-family: 'dinpro-black';
         color: var(--blue);
     }
-    #historia_nombre .items_menu_table a.active img{
+    #historia_hosp .items_menu_table a.active img{
         display: none!important;
     }
-    #historia_nombre .item_table > div p{
+    #historia_hosp .item_table > div p{
         margin: 0;
     }
-    #historia_nombre .item_table > div p.title_mobile{
+    #historia_hosp .item_table > div p.title_mobile{
         font-size: 16px;
         color: var(--blue);
         font-family: 'dinpro-black';
         margin: 0;
         margin-bottom: 4px;
     }
-    #historia_nombre .table{        
+    #historia_hosp .table{        
         margin: 13px 18px;
         padding-top: 120px;
     }
-    #historia_nombre .item_table > div:nth-child(10){        
+    #historia_hosp .item_table > div:nth-child(10){        
         grid-column-start: 1;
         grid-column-end: 3;
         width: 100%;
     }
-    #historia_nombre .item_table > div:nth-child(10) a img{
+    #historia_hosp .item_table > div:nth-child(10) a img{
         display: none;
     }
-    #historia_nombre .item_table > div:nth-child(10) a p{
+    #historia_hosp .item_table > div:nth-child(10) a p{
         display: none;
     }
-    #historia_nombre .holder_view .search h2, #historia_nombre div.insight_search {
+    #historia_hosp .holder_view .search h2, #historia_hosp div.insight_search {
         display: none;
     }    
-    #historia_nombre .item_table > div *{
+    #historia_hosp .item_table > div *{
         text-align: left;
     }
     /* Slider */
-    #historia_nombre .item_table > div.slick_items_table{
+    #historia_hosp .item_table > div.slick_items_table{
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 5;
         width: 100%;
         flex-wrap: wrap;
     }
-    #historia_nombre .slick_items_table > div > div > div{
+    #historia_hosp .slick_items_table > div > div > div{
         display: initial;
     }
-    #historia_nombre .slick_items_table .colors_container{
+    #historia_hosp .slick_items_table .colors_container{
         display: flex;
         align-items: center;
         justify-content: space-between;
         max-width: 90%;
         margin-top: 10px;
     }
-    #historia_nombre .slick_items_table ul.slick-dots{
+    #historia_hosp .slick_items_table ul.slick-dots{
         padding: 0;
         display: flex;
         justify-content: center;
         margin: auto;
         margin-top: 15px;
     }
-    #historia_nombre .slick_items_table ul.slick-dots li{
+    #historia_hosp .slick_items_table ul.slick-dots li{
         list-style: none;
     }
-    #historia_nombre .slick_items_table ul.slick-dots li button{
+    #historia_hosp .slick_items_table ul.slick-dots li button{
         border: none;
         color: transparent;
         background: #ebebeb;
@@ -550,31 +550,31 @@ body{
         width: 11px;
         height: 11px;
     }
-    #historia_nombre .slick_items_table ul.slick-dots li.slick-active button{
+    #historia_hosp .slick_items_table ul.slick-dots li.slick-active button{
         background: #11acc8!important;
     }    
     /* Slider */
 
-    #historia_nombre .item_table > div.slick_items_table a{
+    #historia_hosp .item_table > div.slick_items_table a{
         width: 40px;
         height: 40px;
         border-radius: 10px;
     }
-    #historia_nombre .item_table > div:nth-child(2), #historia_nombre .item_table > div:nth-child(3){        
+    #historia_hosp .item_table > div:nth-child(2), #historia_hosp .item_table > div:nth-child(3){        
         grid-column: 2/2;
         grid-row: 1;
     }
-    #historia_nombre .item_table > div:nth-child(3){
+    #historia_hosp .item_table > div:nth-child(3){
         margin-left: auto;
     }
-    #historia_nombre .item_table > div:nth-child(9){
+    #historia_hosp .item_table > div:nth-child(9){
         grid-row: 3;
         grid-column: 2;
     }
-    #historia_nombre .item_table > div:nth-child(7){
+    #historia_hosp .item_table > div:nth-child(7){
         grid-column: 1/3;
     }
-    #historia_nombre .item_table > div:nth-child(10) p{        
+    #historia_hosp .item_table > div:nth-child(10) p{        
         width: 190px;
         height: 40px;
         border-radius: 10px;
@@ -586,64 +586,64 @@ body{
         color: #fff;
         margin: auto;
     }
-    #historia_nombre .item_table > div{
+    #historia_hosp .item_table > div{
         margin-bottom: 15px;
     }
-    #historia_nombre .holder_view{
+    #historia_hosp .holder_view{
         margin-top: 60px;
     }
-    #historia_nombre div.menu_table{
+    #historia_hosp div.menu_table{
         padding: 0 18px;
     }
 
-    #historia_nombre div.insight_search > div a:nth-child(2){
+    #historia_hosp div.insight_search > div a:nth-child(2){
         display: none;
     }
-    #historia_nombre div.insight_search form{
+    #historia_hosp div.insight_search form{
         display: none;
     }
 
-    #historia_nombre.active_search nav #search_toggle{
+    #historia_hosp.active_search nav #search_toggle{
         background: var(--blue_c);
     }
 
-    #historia_nombre.active_search .insight_search{
+    #historia_hosp.active_search .insight_search{
         display: block;
         padding: 20px;
         background: var(--blue_c);
         margin: 0;
     }
-    #historia_nombre.active_search .insight_search > div{
+    #historia_hosp.active_search .insight_search > div{
         display: flex;
         justify-content: space-between;
     }
 
-    #historia_nombre div.insight_search form.active{
+    #historia_hosp div.insight_search form.active{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-    #historia_nombre div.insight_search form.active > div:nth-child(2){
+    #historia_hosp div.insight_search form.active > div:nth-child(2){
         margin-top: 15px;
     }
-    #historia_nombre div.insight_search form.active > div input{
+    #historia_hosp div.insight_search form.active > div input{
         width: calc(100% - 40px)!important;
     }
-    #historia_nombre div.insight_search form label{
+    #historia_hosp div.insight_search form label{
         display: none;
     }
 
-    #historia_nombre div.insight_search form input[type="submit"]{
+    #historia_hosp div.insight_search form input[type="submit"]{
         color: transparent;
         width: 40px;
     }
-    #historia_nombre div.insight_search form span.submit{
+    #historia_hosp div.insight_search form span.submit{
         position: absolute;
         width: 40px;
         right: 20px;
         top: 120px;
     }
-    #historia_nombre div.insight_search form span.submit:before{
+    #historia_hosp div.insight_search form span.submit:before{
         content: url(//via.placeholder.com/20x20);
         position: absolute;
         top: 0;
@@ -654,57 +654,57 @@ body{
         width: 20px;
         height: 20px;
     }
-    #historia_nombre div.insight_search form select {
+    #historia_hosp div.insight_search form select {
         max-width: 280px; 
     }
     
-    #historia_nombre.active_search .table{        
+    #historia_hosp.active_search .table{        
         padding-top: calc(120px + 68px);
     }
-    #historia_nombre.active_search.form_deployed .table{     
+    #historia_hosp.active_search.form_deployed .table{     
         padding-top: calc(120px + 178px);
     }
-    #historia_nombre .item_table hr.last_hr{
+    #historia_hosp .item_table hr.last_hr{
         display: none;
     }
 
 
 
     /*Modales*/
-    #historia_nombre .modal{
+    #historia_hosp .modal{
         height: 100%;
     }
-    #historia_nombre .modal .menu_table{
+    #historia_hosp .modal .menu_table{
         display: none;
     }
-    #historia_nombre .modal > div{
+    #historia_hosp .modal > div{
         width: 100%;
         margin: 0;
         box-sizing: border-box;
         border-radius: 0;
         padding: 18px;
     }
-    #historia_nombre .modal .table .item_table > div:nth-child(3){
+    #historia_hosp .modal .table .item_table > div:nth-child(3){
         width: 100%!important;
         grid-column: 1/3;
         grid-row: auto;
     }
-    #historia_nombre .modal .item_table > div:nth-child(2){
+    #historia_hosp .modal .item_table > div:nth-child(2){
         width: 100%;
         grid-column: auto;
         grid-row: auto;
     }
-    #historia_nombre .modal .item_table > div:nth-child(5){
+    #historia_hosp .modal .item_table > div:nth-child(5){
         grid-column: 1/3;
     }
-    #historia_nombre .modal.active{
+    #historia_hosp .modal.active{
         display: block!important;
     }
-    #historia_nombre .modal .table .item_table{
+    #historia_hosp .modal .table .item_table{
         padding: 20px 17px;
         border-radius: 10px;
     }
-    #historia_nombre .modal .table .item_table > div p.look__i{
+    #historia_hosp .modal .table .item_table > div p.look__i{
         width: 190px;
     }
 }

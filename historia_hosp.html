@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="styles/main_syles.css">
 
     <!-- Estilos de vista -->
-    <link rel="stylesheet" href="styles/historia_nombre.css">
+    <link rel="stylesheet" href="styles/historia_hosp.css">
 
     <link rel="stylesheet" href="slick/slick/slick.css">
 
 </head>
 <body>
 
-    <div id="historia_nombre" class="form_deployed">
+    <div id="historia_hosp" class="form_deployed">
         <nav id="main_nav">
             <div>
                 <img class="logo" src="assets/logo_blanco.png" alt="logo">
@@ -105,15 +105,15 @@
 
                 <div class="menu_table">
                     <div class="items_menu_table">
-                        <a href="#" class="active">
+                        <a href="historia_hosp.html" class="active">
                             <img class="only_mobile" src="//via.placeholder.com/23x20" alt="">
                             <p>Hospitalización</p>
                         </a>
-                        <a href="#">
+                        <a href="historia_emer.html">
                             <img class="only_mobile" src="//via.placeholder.com/23x20" alt="">
                             <p>Emergencia</p>
                         </a>
-                        <a href="#">
+                        <a href="historia_ambu.html">
                             <img class="only_mobile" src="//via.placeholder.com/23x20" alt="">
                             <p>Ambulatorio</p>
                         </a>
@@ -212,7 +212,7 @@
                     </div>
                     
                     <div>
-                        <a href="#">
+                        <a href="portal_nota.html">
                             <p class="only_mobile">Ver Historia Clinica</p>
                             <img src="//via.placeholder.com/20x20" alt="ver">
                         </a>
@@ -1334,7 +1334,7 @@
                 this.parentElement.classList.toggle('checked');
             })    
             
-            const app = document.getElementById('historia_nombre');
+            const app = document.getElementById('historia_hosp');
             const search_toggle = document.getElementById('search_toggle');
             let forms = document.querySelectorAll('form');
             const form_name = document.getElementById('form_name');

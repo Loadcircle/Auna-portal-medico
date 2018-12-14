@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="styles/main_syles.css">
 
     <!-- Estilos de vista -->
-    <link rel="stylesheet" href="styles/portal_nota.css">
+    <link rel="stylesheet" href="styles/portal_imagenes.css">
 
 </head>
 <body>
 
-    <div id="portal_nota" class="">
+    <div id="portal_imagenes" class="">
         <nav id="main_nav">
             <div>
                 <img class="logo" src="assets/logo_blanco.png" alt="logo">
@@ -93,14 +93,14 @@
                 </a>
             </div>
             <div class="header_tab">
-                <a class="active" href="portal_nota.html">Nota de ingreso</a>
+                <a href="portal_nota.html">Nota de ingreso</a>
                 <a href="portal_control.html">Control de func. vitales</a>
                 <a href="portal_evolucion.html">Evolución hospitalización</a>
                 <a href="portal_informe.html">Informe operatorio</a>
                 <a href="portal_anotaciones.html">Anotaciones de enfermería</a>
                 <a href="portal_balance.html">Balance hídrico</a>
                 <a href="portal_laboratorio.html">Laboratorio</a>
-                <a href="portal_imagenes.html">Imágenes</a>
+                <a class="active" href="portal_imagenes.html">Imágenes</a>
                 <a href="#">
                     <img src="//via.placeholder.com/25x25" alt="">
                 </a>
@@ -308,7 +308,7 @@
             let button_historial = document.getElementById('historial');
             let menu_historial = document.getElementById('menu_historial');
             let grid_menu = document.querySelectorAll('.grid_menu');
-            const app_portal = document.getElementById('portal_nota');
+            const app_portal = document.getElementById('portal_imagenes');
 
             button_historial.addEventListener('click', function(){
                 grid_menu.forEach(function(k){
