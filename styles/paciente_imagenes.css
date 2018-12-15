@@ -1,0 +1,141 @@
+#paciente_imagenes{
+    padding: 60px 20px 40px;
+    background: var(--background);
+    min-height: 100vh
+}
+#paciente_imagenes > div{
+    position: relative;
+}
+#paciente_imagenes > div > div.content_doc{
+    background: #fff;
+    max-width: 720px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
+    width: calc(100% - 200px);
+    margin: auto;
+    padding: 40px 45px;
+    margin-top: 40px;
+    position: relative;
+}
+#paciente_imagenes > div > div.content_doc > a{
+    position: absolute;
+    top: 0;
+    right: -30px;
+    font-size: 18px;
+    font-family: 'dinpro-bold';
+    color: #272727
+}
+
+#paciente_imagenes div.arrow{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#paciente_imagenes > div > div.content_doc > div.arrow.left-arrow{
+    position: absolute;
+    top: 300px;
+    left: -75px;
+}
+#paciente_imagenes > div > div.content_doc > div.arrow.right-arrow{
+    position: absolute;
+    top: 300px;
+    right: -75px;
+}
+#paciente_imagenes .nav_bar_doc{
+    display: flex;
+    width: 180px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 25px;
+}
+#paciente_imagenes > div > div.nav_bar_doc > div:nth-child(2){
+    width: 40px;
+    height: 35px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    border: solid 1px #eeeeee99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+/*Insight doc*/
+#paciente_imagenes > div > div.content_doc > h2{
+    margin-top: 0;
+}
+#paciente_imagenes > div > div.content_doc > div:nth-child(5){
+    display: flex;
+}
+#paciente_imagenes > div > div.content_doc > div:nth-child(5) > div{
+    width: 100%;
+}
+#paciente_imagenes > div > div.content_doc > div:nth-child(5) > div:nth-child(1){
+    margin-right: 20px
+}
+#paciente_imagenes > div > div.content_doc > div:nth-child(5) > div p span{
+    font-family: 'dinpro-medium'
+}
+
+
+#paciente_imagenes .content_doc .table > div:nth-child(1){
+    display: flex;
+}
+#paciente_imagenes .content_doc .table > div:nth-child(1) > p{
+    width: 100%;
+}
+#paciente_imagenes > div > div.content_doc p{
+    font-size: 15px;
+}
+
+
+@media (max-width: 1024px){
+    #paciente_imagenes nav.only_mobile{
+        align-items: center;
+        padding: 0 20px;
+    }    
+    #paciente_imagenes nav.only_mobile h2{
+        color: #fff;
+        font-size: 20px;
+        margin-left: 45px;
+    }
+    #paciente_imagenes > div > div.content_doc{
+        width: 100%;
+        margin-top: 15px;
+        padding: 20px;
+    }
+    #paciente_imagenes > div > div.content_doc > div:nth-child(5) > div:nth-child(1){
+        margin: 0;
+    }
+    #paciente_imagenes .content_doc .table .offtime hr{
+        display: none;
+    }
+    #paciente_imagenes .content_doc .table .offtime{
+        display: block;
+        margin-bottom: 40px;
+    }
+    #paciente_imagenes .offtime p > span.only_mobile{
+        display: initial!important;
+    }
+    #paciente_imagenes > div > div.content_doc > a{
+        display: none;
+    }
+    #paciente_imagenes > div > div.content_doc > div.arrow.left-arrow{
+        display: none;
+    }
+    #paciente_imagenes > div > div.content_doc > div.arrow.right-arrow{
+        display: none;
+    }
+    #paciente_imagenes .content_doc .table .offtime p:nth-child(1){
+        width: 100%;
+    }
+}

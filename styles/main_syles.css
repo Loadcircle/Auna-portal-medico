@@ -76,12 +76,14 @@ h6{
 }
 .blue{
     color: var(--blue);
+    font-family: 'dinpro-medium';
 }
 .green{
     color: var(--green);
 }
 .grey{
     color: var(--grey);
+    font-family: 'dinpro-medium';
 }
 .blue_b{
     color: var(--blue_b);
@@ -96,7 +98,6 @@ h6{
     color: #c60000;
     font-family: 'dinpro-medium'
 }
-
 /* Estilos Nav */
 nav{
     position: fixed;
@@ -215,6 +216,10 @@ nav#main_nav>div.perfil:before, nav#main_nav>div.clinica:before{
 @media (max-width: 1024px){
     .only_mobile{
         display: flex!important;
+    }
+    
+    .only_desktop{
+        display: none!important;
     }
 }
 
