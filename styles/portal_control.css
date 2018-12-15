@@ -376,6 +376,8 @@
 
 
 
+
+
 @media (max-width: 1024px){
     #portal_control div.perfil_client{
         padding: 80px 20px 10px
@@ -464,4 +466,5 @@
     #portal_control .content_layout>div.padding-left{
         display: none;
     }
+
 }

@@ -238,9 +238,7 @@
     max-height: calc(100vh - 230px);
 }
 #portal_evolucion .content_view{
-    background: #fff;
     border-radius: 10px;
-    padding: 30px 40px;
 }
 #portal_evolucion .grid_menu.active .window_info{
     grid-column: 1/4;
@@ -376,6 +374,9 @@
 
 
 
+
+
+
 @media (max-width: 1024px){
     #portal_evolucion div.perfil_client{
         padding: 80px 20px 10px
@@ -434,9 +435,6 @@
         overflow: hidden;
         top: 0;
         height: auto;
-    }
-    #portal_evolucion .content_view{
-        padding: 18px;
     }
     #portal_evolucion .grid_menu #menu_historial form input:not([type="submit"]){
         width: calc(100% - 70px);

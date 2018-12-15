@@ -238,9 +238,7 @@
     max-height: calc(100vh - 230px);
 }
 #portal_anotaciones .content_view{
-    background: #fff;
     border-radius: 10px;
-    padding: 30px 40px;
 }
 #portal_anotaciones .grid_menu.active .window_info{
     grid-column: 1/4;
@@ -432,9 +430,6 @@
         overflow: hidden;
         top: 0;
         height: auto;
-    }
-    #portal_anotaciones .content_view{
-        padding: 18px;
     }
     #portal_anotaciones .grid_menu #menu_historial form input:not([type="submit"]){
         width: calc(100% - 70px);

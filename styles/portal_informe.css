@@ -374,6 +374,20 @@
     margin: 0 18px 0 10px;
 }
 
+
+#portal_informe .content_view .c_100 p.blue{
+    min-width: 40%;
+}
+#portal_informe .content_view .c_50 p.box_rep{
+    width: 150px;
+}
+#portal_informe .content_view .c_50 p.blue{
+    padding-right: 20px;
+}
+
+
+
+
 @media (max-width: 1024px){
     #portal_informe div.perfil_client{
         padding: 80px 20px 10px
@@ -462,4 +476,28 @@
     #portal_informe .content_layout>div.padding-left{
         display: none;
     }
+
+
+
+
+    
+        #portal_informe .content_view .c_100 p.blue{
+            min-width: 40%;
+        }
+        #portal_informe .content_view .c_50 p.box_rep{
+            width: 95%;
+            padding: 0;
+        }
+        #portal_informe .content_view .c_50 p.blue{
+            padding-right: 0px;
+        }
+        #portal_informe .content_view .c_100 p.box_rep{
+            padding: 0;
+        }
+        #mid_y > div.grid_menu > div.window_info > div > div:nth-child(18) > div:nth-child(1) > p.blue{
+            min-height: 51px;
+        }
+        #mid_y > div.grid_menu > div.window_info > div > div:nth-child(20) > div:nth-child(1) > p.blue{
+            min-height: 34px;
+}   
 }
