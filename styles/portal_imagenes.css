@@ -114,6 +114,22 @@
     background: var(--background);
     padding-right: 50px;
     height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+#portal_imagenes .grid_menu > div:nth-child(2)>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    margin-right: 47px;
+}
+#portal_imagenes .grid_menu > div:nth-child(2)>div>a{
+    width: 80px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #portal_imagenes .grid_menu button#historial{
     background: none;
@@ -238,9 +254,7 @@
     max-height: calc(100vh - 230px);
 }
 #portal_imagenes .content_view{
-    background: #fff;
     border-radius: 10px;
-    padding: 30px 40px;
 }
 #portal_imagenes .grid_menu.active .window_info{
     grid-column: 1/4;
@@ -373,7 +387,6 @@
     background-image: linear-gradient(to bottom, #ffffff, #e9e9e9);
     margin: 0 18px 0 10px;
 }
-
 @media (max-width: 1024px){
     #portal_imagenes div.perfil_client{
         padding: 80px 20px 10px
@@ -432,9 +445,6 @@
         overflow: hidden;
         top: 0;
         height: auto;
-    }
-    #portal_imagenes .content_view{
-        padding: 18px;
     }
     #portal_imagenes .grid_menu #menu_historial form input:not([type="submit"]){
         width: calc(100% - 70px);

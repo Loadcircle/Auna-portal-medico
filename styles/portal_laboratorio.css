@@ -114,6 +114,15 @@
     background: var(--background);
     padding-right: 50px;
     height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+#portal_laboratorio .grid_menu > div:nth-child(2)>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    margin-right: 16px;
 }
 #portal_laboratorio .grid_menu button#historial{
     background: none;
@@ -238,9 +247,7 @@
     max-height: calc(100vh - 230px);
 }
 #portal_laboratorio .content_view{
-    background: #fff;
     border-radius: 10px;
-    padding: 30px 40px;
 }
 #portal_laboratorio .grid_menu.active .window_info{
     grid-column: 1/4;
@@ -432,9 +439,6 @@
         overflow: hidden;
         top: 0;
         height: auto;
-    }
-    #portal_laboratorio .content_view{
-        padding: 18px;
     }
     #portal_laboratorio .grid_menu #menu_historial form input:not([type="submit"]){
         width: calc(100% - 70px);
