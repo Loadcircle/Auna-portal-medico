@@ -23,9 +23,9 @@ body{
     padding: 95px 0 0 95px;
 }
 #historia_ambu .holder_view .search h2:before{
-    content: url(//via.placeholder.com/20x20);
+    content: url(../assets/search_blue.png);
     position: absolute;
-    top: 95px;
+    top: 103px;
     bottom: 0;
     left: 50px;
     margin: auto;
@@ -146,7 +146,7 @@ body{
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(128, 128, 128, 0.25));
 }
 #historia_ambu div.insight_search form label:after{
-    content: url(https://cdn2.hubspot.net/hubfs/4875661/Landing%20Principios%20Gerenciales/check.png?t=1542904457434);
+    content: url(../assets/check.png);
     position: absolute;
     left: -3.1px;
     top: 1px;
@@ -479,7 +479,7 @@ body{
         font-family: 'dinpro-black';
         color: var(--blue);
     }
-    #historia_ambu .items_menu_table a.active img{
+    #historia_ambu .items_menu_table a.active p.only_mobile.blue{
         display: none!important;
     }
     #historia_ambu .item_table > div p{
@@ -644,15 +644,15 @@ body{
         top: 120px;
     }
     #historia_ambu div.insight_search form span.submit:before{
-        content: url(//via.placeholder.com/20x20);
+        content: url(../assets/Next_white.png);
         position: absolute;
-        top: 0;
+        top: -2px;
         bottom: 0;
         left: 0;
-        right: 0;
+        right: 2px;
         margin: auto;
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 15px;
     }
     #historia_ambu div.insight_search form select {
         max-width: 280px; 

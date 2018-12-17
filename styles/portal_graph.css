@@ -1,0 +1,176 @@
+#portal_graph, body{
+    background: var(--background);
+}
+#portal_graph div.perfil_client{
+    padding: 80px 50px 10px;
+    background: var(--background);
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+#portal_graph div.perfil_client .perfil_picture{
+    width: 165px;
+}
+#portal_graph div.perfil_client .perfil_info{
+    width: 86%;
+    box-sizing: border-box;
+    margin-left: 20px;
+    background: #fff;  
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
+#portal_graph div.perfil_info > div > div:nth-child(2){
+    min-width: 280px;
+    padding-left: 40px;
+    border-left: solid 1px #dddddd;
+    border-right: solid 1px #dddddd;
+}
+#portal_graph div.perfil_info > div > div:nth-child(2)>div{
+    display: flex;
+    align-items: center;
+}
+#portal_graph div.perfil_info > div > div:nth-child(2)>div >p:nth-child(1){
+    min-width: 110px
+}
+#portal_graph div.perfil_info > div > div:nth-child(3) > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#portal_graph div.perfil_info > div > div:nth-child(3) > a p{
+    max-width: 113px;
+    margin: 0 15px;
+    font-size: 15px;
+}
+#portal_graph div.perfil_client .perfil_info h2{
+    margin: 0;
+}
+#portal_graph div.perfil_client .perfil_info>div{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+#portal_graph div.perfil_client .perfil_info>div p span{
+    color: var(--blue);
+    font-family: 'dinpro-medium'
+}
+#portal_graph div.perfil_client .perfil_info>div p{
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+
+#portal_graph .layout_graph{
+    max-width: 1100px;
+    margin: 35px auto;
+    display: flex;
+    padding: 0 15px;
+}
+#portal_graph .select_graph{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+#portal_graph .graph_view{
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    min-height: 400px;
+    margin-left: 40px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+#portal_graph .select_graph label{
+    position: relative;
+    font-size: 15px;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+#portal_graph .select_graph label:before{
+    content: '';
+    position: absolute;  
+    width: 20px;
+    height: 20px;
+    border: solid 1px #eeeeee99;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #ffffff, #e9e9e9);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#portal_graph .select_graph label.active:before{
+    content: url(../assets/check.png);
+}
+#portal_graph .select_graph label.active{
+    color: var(--blue);
+    font-family: 'dinpro-medium';
+}
+#portal_graph .select_graph label>input[type="checkbox"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+
+
+
+@media (max-width: 1024px){
+    #portal_graph div.perfil_client{
+        padding: 80px 20px 10px
+    }
+    #portal_graph > div.perfil_client > div.perfil_info > div > div:nth-child(1) > p:nth-child(1) > span{
+        display: none;
+    }
+    #portal_graph div.perfil_client .perfil_info>div{
+        display: block;
+    }
+    #portal_graph div.perfil_info > div > div:nth-child(2){
+        display: none;
+    }
+    #portal_graph div.perfil_info > div > div:nth-child(3){
+        display: none;
+    }
+    #portal_graph div.perfil_client .perfil_info>div p:not(:nth-child(1)){
+        display: none;
+    }
+    #portal_graph div.perfil_client .perfil_info{
+        background: none;
+        padding: 0;
+    }
+    nav.only_mobile{
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    #portal_graph nav.only_mobile h2{
+        color: #fff;
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+    #portal_graph .graph_view{
+        margin-left: 0;
+        min-height: 200px;
+        padding: 15px;
+        padding-top: 0;
+        margin-bottom: 10px;
+        height: 250px;
+        padding-bottom: 60px;
+        box-sizing: border-box;
+    }
+    #portal_graph .layout_graph{
+        flex-direction: column;
+    }
+
+}

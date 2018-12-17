@@ -16,28 +16,28 @@
 
     <div id="apps">
         <nav>
-            <img class="logo" src="assets/logo_blanco.png" alt="logo">
+            <a href="apps.html"><img class="logo" src="assets/logo_blanco.png" alt="logo"></a>
         </nav>
 
-        <div class="side_bar">
+        <div class="side_bar" id="side_bar">
             <a href="historia_hosp.html">
-                <img src="//via.placeholder.com/33x33" alt="icon">
+                <img src="assets/icon1.png" alt="icon">
                 <p>Historia Médica</p>
             </a>
             <a href="#">
-                <img src="//via.placeholder.com/33x33" alt="icon">
+                <img src="assets/icon1.png" alt="icon">
                 <p>Agenda Médica</p>
             </a>
             <a href="#">
-                <img src="//via.placeholder.com/33x33" alt="icon">
+                <img src="assets/icon1.png" alt="icon">
                 <p>Tbaleros Médica</p>
             </a>
             <a href="#">
-                <img src="//via.placeholder.com/33x33" alt="icon">
+                <img src="assets/icon1.png" alt="icon">
                 <p>Honorarios Médica</p>
             </a>
             <a href="#">
-                <img src="//via.placeholder.com/33x33" alt="icon">
+                <img src="assets/icon1.png" alt="icon">
                 <p>Web Resultados</p>
             </a>
         </div>
@@ -46,7 +46,7 @@
             <div>
                 <p class="day">Hoy</p>
                 <div class="item">
-                    <img src="//via.placeholder.com/33x33" alt="icon">
+                    <img src="assets/icon1.png" alt="icon">
                     <div>
                         <p><strong>Honorarios Médicos</strong></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -55,7 +55,7 @@
                     <a href="portal_nota.html">Ir</a>
                 </div>
                 <div class="item">
-                    <img src="//via.placeholder.com/33x33" alt="icon">
+                    <img src="assets/icon1.png" alt="icon">
                     <div>
                         <p><strong>Honorarios Médicos</strong></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -65,7 +65,7 @@
                 </div>
                 <p class="day">Ayer</p>
                 <div class="item">
-                    <img src="//via.placeholder.com/33x33" alt="icon">
+                    <img src="assets/icon1.png" alt="icon">
                     <div>
                         <p><strong>Honorarios Médicos</strong></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -74,7 +74,7 @@
                     <a href="#">Ir</a>
                 </div>
                 <div class="item">
-                    <img src="//via.placeholder.com/33x33" alt="icon">
+                    <img src="assets/icon1.png" alt="icon">
                     <div>
                         <p><strong>Honorarios Médicos</strong></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -83,7 +83,7 @@
                     <a href="#">Ir</a>
                 </div>
                 <div class="item">
-                    <img src="//via.placeholder.com/33x33" alt="icon">
+                    <img src="assets/icon1.png" alt="icon">
                     <div>
                         <p><strong>Honorarios Médicos</strong></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -92,7 +92,7 @@
                     <a href="#">Ir</a>
                 </div>
                 <div class="item">
-                    <img src="//via.placeholder.com/33x33" alt="icon">
+                    <img src="assets/icon1.png" alt="icon">
                     <div>
                         <p><strong>Honorarios Médicos</strong></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -106,5 +106,17 @@
 
     <!-- Javascript toda web -->
     <script src="js/main_app.js"></script>
+    <script>
+    
+        (function(){
+
+            const app_bar = document.getElementById('side_bar');
+
+            app_bar.addEventListener('click', (function(){
+                this.classList.toggle('active');
+            }));
+        })()
+
+    </script>
 </body>
 </html>

@@ -412,6 +412,30 @@ nav#main_nav>div.perfil:before, nav#main_nav>div.clinica:before{
     }
 
 
+/*Navegador mobile para portales*/
+    #deploy_menu{
+        position: fixed;
+        top: 60px;
+        left: 0;
+        padding: 20px;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background: var(--blue);
+        z-index: 20;
+        box-sizing: border-box;
+    }
+    #deploy_menu.active{
+        display: flex;
+    }
+    #deploy_menu>a{
+        font-size: 23px;
+        font-family: 'dinpro-bold';
+        color: #fff;
+        margin-bottom: 15px;
+    }
     
 
     

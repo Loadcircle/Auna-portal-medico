@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portal medico Grafica</title>
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="styles/main_syles.css">
+
+    <!-- Estilos de vista -->
+    <link rel="stylesheet" href="styles/portal_graph.css">
+
+</head>
+<body>
+
+    <div id="portal_graph" class="">
+        <nav id="main_nav">
+            <div>
+                <a href="apps.html"><img class="logo" src="assets/logo_blanco.png" alt="logo"></a>
+                <p>| Historia Clínica</p>
+            </div>
+
+            <div class="bell active toggle_menu">
+                <img width="22px" src="assets/bell.png" alt="bell">
+            </div>
+            
+            <div class="clinica toggle_menu">
+                <span>Clinica Delgado</span>
+                <ul>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                </ul>
+            </div>
+
+            <div class="perfil toggle_menu">
+                <img width="40px" src="assets/person.png" alt="persona">
+                <span>Dr. Zegarra</span>
+                <ul>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="only_mobile">
+            <a href="apps.html"><img src="assets/arrow_left.png" alt="arrow"></a>
+            <h2>Gráfica</h2>
+        </nav>
+
+        <div class="perfil_client" >
+            <div class="perfil_picture">
+                <img src="assets/perfil_picture.png" alt="perfil">
+            </div>
+
+            <div class="perfil_info">
+                <h2>Montalvo López, Luis Alexander</h2>
+                <div>
+                    <div>
+                        <p><span>Fecha de Nacimiento:</span> 21 / 11/ 1991   (27 años)</p>
+                        <p><span>Sexo:</span> Masculino</p>
+                        <p><span>NHC:</span> 123456</p>
+                        <p><span>Grupo Sanguineo:</span> AB &nbsp;&nbsp; <span>Factor: </span> RH +</p>
+                    </div>
+                    <div>
+                        <div><p><span>Alergias:</span></p> <p class="red">Penicilina</p></div>
+                        <div><p><span>Antecedentes:</span></p> <p>Hijo fallecido</p></div>
+                    </div>
+
+                    <div>
+                        <a href="portal_graph.html" id="go_graph">
+                            <img src="assets/graph.png" alt="grafica">
+                            <p>Ir a gráfica de
+                                    funciones vitales</p>
+                            <img src="assets/go_blue.png" alt="">
+                        </a>
+                    </div>
+                    <p class="only_mobile red">Alergias: Penicilina</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="layout_graph">
+            <div class="select_graph only_desktop">
+                <label for="item_1" class="active">
+                    <input type="checkbox" id="item_1" name="item_1">
+                        Lorem ipsum dolor sit
+                </label>
+                <label for="item_2" class="">
+                    <input type="checkbox" id="item_2" name="item_2">
+                        Lorem ipsum dolor sit
+                </label>
+                <label for="item_3" class="">
+                    <input type="checkbox" id="item_3" name="item_3">
+                        Lorem ipsum dolor sit                
+                </label>
+                <label for="item_4" class="">
+                    <input type="checkbox" id="item_4" name="item_4">
+                        Lorem ipsum dolor sit
+                </label>
+                <label for="item_5" class="">
+                    <input type="checkbox" id="item_5" name="item_5">
+                        Lorem ipsum dolor sit
+                </label>
+                <label for="item_6" class="">
+                    <input type="checkbox" id="item_6" name="item_6">
+                        Lorem ipsum dolor sit
+                </label>
+                <label for="item_7" class="">
+                    <input type="checkbox" id="item_7" name="item_7">
+                        Lorem ipsum dolor sit
+                </label>
+                <label for="item_8" class="">
+                    <input type="checkbox" id="item_8" name="item_8">
+                        Lorem ipsum dolor sit
+                </label>
+                <label for="item_9" class="">
+                    <input type="checkbox" id="item_9" name="item_9">
+                        Lorem ipsum dolor sit
+                </label>
+            </div>
+            <div class="graph_view">
+                <p class="blue only_mobile">Frecuencia cardiaca</p>
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+            <div class="graph_view only_mobile">
+                <p class="blue only_mobile">Frecuencia cardiaca</p>
+            </div>
+            <div class="graph_view only_mobile">
+                <p class="blue only_mobile">Frecuencia cardiaca</p>
+            </div>
+            <div class="graph_view only_mobile">
+                <p class="blue only_mobile">Frecuencia cardiaca</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Javascript toda web -->
+    <script src="js/main_app.js"></script>
+    <script src="js/Chart.bundle.min.js"></script>
+    <script>
+        (function(){
+            let checks = document.querySelectorAll('input[type="checkbox"]');
+            
+            checks.forEach(function(k){
+                k.addEventListener('change', function(e) {
+                    if(k.checked){
+                        k.parentNode.classList.add('active')
+                    }else{
+                        k.parentNode.classList.remove('active')
+                    }
+                });
+            })
+
+
+
+            /*Graph*/
+                var ctx = document.getElementById("myChart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ["One", "Two", "Three", "Four", "Five"],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [1, 3, 6, 2, 4.5],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0)'
+                            ],
+                            borderColor: [
+                                '#EB008A',
+                            ],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive:true,
+                        maintainAspectRatio: false,
+                        aspectRatio: 2,
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero:true
+                                }
+                            }]
+                        },
+                    }
+                });
+                
+        })()
+    </script>
+</body>
+</html>

@@ -100,13 +100,35 @@
     #apps .side_bar{
         padding: 75px 20px;
     }
+    #apps .side_bar.active{
+
+    }
+    #apps .side_bar:before{
+        content: '';
+        background: url(../assets/arrow_left.png);
+        width: 22px;
+        height: 18px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 25px;
+        top: 400px;
+    }
     #apps .side_bar a{
         height: auto;
         width: auto;
         padding: 0;
+        background: none;
+        box-shadow: none;
     }
     #apps .side_bar a p {
         display: none;
+        margin: 0;
+        margin-left: 12px;
+    }
+    #apps .side_bar.active a p {
+        display: initial!important;
     }
     #apps .side_bar a img{
         margin: 0;
