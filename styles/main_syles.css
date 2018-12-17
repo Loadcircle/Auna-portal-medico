@@ -253,6 +253,7 @@ nav#main_nav>div.perfil:before, nav#main_nav>div.clinica:before{
     border: solid 1px #eeeeee99;
     border-radius: 5px;
     background-image: linear-gradient(to bottom, #ffffff, #f8f8f8);
+    box-sizing: border-box;
 }
 .content_view .content_mult{
     display: flex;
@@ -450,6 +451,7 @@ nav#main_nav>div.perfil:before, nav#main_nav>div.clinica:before{
 }
 .content_view .c_50 p.box_rep{
     width: 95%;
+    box-sizing: border-box;
 }
 .content_view .c_100{
     display: block;
