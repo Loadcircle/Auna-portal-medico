@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portal medico Lista</title>
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="styles/main_syles.css">
+
+    <!-- Estilos de vista -->
+    <link rel="stylesheet" href="styles/list_portal.css">
+
+</head>
+<body>
+
+    <div id="list_portal" class="">
+        <nav id="main_nav">
+            <div>
+                <a href="apps.html"><img class="logo" src="assets/logo_blanco.png" alt="logo"></a>
+                <p>| Historia Clínica</p>
+            </div>
+
+            <div class="bell active toggle_menu">
+                    <img width="22px" src="assets/bell.png" alt="bell">
+                    <div>
+                        <p>Liquidaciones observadas</p>
+                        <div class="not_items">
+                            <div class="not_item">
+                                <div>
+                                    <p>Código de liquidación</p>
+                                    <p>AUNA00001</p>
+                                </div>
+                                <div>
+                                    <p>Importe</p>
+                                    <p>S/ 1,500.00</p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="not_item">
+                                <div>
+                                    <p>Código de liquidación</p>
+                                    <p>AUNA00001</p>
+                                </div>
+                                <div>
+                                    <p>Importe</p>
+                                    <p>S/ 1,500.00</p>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="clinica toggle_menu">
+                    <span>Clinica Delgado</span>
+                    <ul>          
+                        <li>Clinica Bellavista</li>
+                        <li>Clínica Camino Real</li>
+                        <li>Clínica Miraflores</li>
+                        <li>Clínica Vallesur</li>
+                    </ul>
+                </div>
+    
+                <div class="perfil toggle_menu">
+                    <img width="40px" src="assets/person.png" alt="persona">
+                    <span>Dr. Zegarra</span>
+                    <ul>         
+                        <li>Protocolos de hh.mm.</li>
+                        <li>Cerrar sesión</li>
+                    </ul>
+                </div>
+        </nav>
+
+        <nav class="only_mobile">
+            <a href="apps.html"><img src="assets/arrow_left.png" alt="arrow"></a>
+            <h2>Formularios</h2>
+            <a href="portal_graph.html">
+                <img src="assets/pulse.png" alt="graph">
+            </a>
+            <div id="deploy_menu_btn">
+                <img src="assets/menu_b.png" alt="menu">
+            </div>
+            <div id="deploy_menu">
+                <a href="portal_nota.html">
+                        Nota de ingreso
+                </a>
+                <a href="portal_control.html">
+                        Control de funciones vitales
+                </a>
+                <a href="portal_evolucion.html">
+                        Evolución hospitalización
+                </a>
+                <a href="portal_informe.html">
+                        Informe operatorio
+                </a>
+                <a href="portal_anotaciones.html">
+                        Anotaciones de enfermería
+                </a>
+                <a href="portal_balance.html">
+                        Balance hídrico
+                </a>
+                <a href="portal_laboratorio.html">
+                        Laboratorio
+                </a>
+                <a href="portal_imagenes.html">
+                        Imágenes
+                </a>
+            </div>
+        </nav>
+
+        <div class="perfil_client" >
+            <div class="perfil_picture">
+                <img src="assets/perfil_picture.png" alt="perfil">
+            </div>
+
+            <div class="perfil_info">
+                <h2>Montalvo López, Luis Alexander</h2>
+                <div>
+                    <div>
+                        <p><span>Fecha de Nacimiento:</span> 21 / 11/ 1991   (27 años)</p>
+                        <p><span>Sexo:</span> Masculino</p>
+                        <p><span>NHC:</span> 123456</p>
+                        <p><span>Grupo Sanguineo:</span> AB &nbsp;&nbsp; <span>Factor: </span> RH +</p>
+                    </div>
+                    <div>
+                        <div><p><span>Alergias:</span></p> <p class="red">Penicilina</p></div>
+                        <div><p><span>Antecedentes:</span></p> <p>Hijo fallecido</p></div>
+                    </div>
+
+                    <div>
+                        <a href="portal_graph.html" id="go_graph">
+                            <img src="assets/graph.png" alt="grafica">
+                            <p>Ir a gráfica de
+                                    funciones vitales</p>
+                            <img src="assets/go_blue.png" alt="">
+                        </a>
+                    </div>
+                    <p class="only_mobile red">Alergias: Penicilina</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="list_layout">
+            <a href="portal_nota.html" class="item_list">
+                Nota de ingreso
+            </a>
+            <a href="portal_control.html" class="item_list">
+                Control de funciones vitales
+            </a>
+            <a href="portal_evolucion.html" class="item_list">
+                Evolución hospitalización
+            </a>
+            <a href="portal_informe.html" class="item_list">
+                Informe operatorio
+            </a>
+            <a href="portal_anotaciones.html" class="item_list">
+                Anotaciones de enfermería
+            </a>
+            <a href="portal_balance.html" class="item_list">
+                Balance hídrico
+            </a>
+            <a href="portal_laboratorio.html" class="item_list">
+                Laboratorio
+            </a>
+            <a href="portal_imagenes.html" class="item_list">
+                Imágenes
+            </a>
+            <a href="portal_epicrisis.html" class="item_list">
+                Epicrisis
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Javascript toda web -->
+    <script src="js/main_app.js"></script>
+</body>
+</html>

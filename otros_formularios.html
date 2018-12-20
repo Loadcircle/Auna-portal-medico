@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portal medico Grafica</title>
+    <title>Portal otros formularios</title>
     <!-- Estilos principales -->
     <link rel="stylesheet" href="styles/main_syles.css">
 
     <!-- Estilos de vista -->
-    <link rel="stylesheet" href="styles/portal_graph.css">
+    <link rel="stylesheet" href="styles/otros_formularios.css">
 
 </head>
 <body>
 
-    <div id="portal_graph" class="">
+    <div id="otros_formularios" class="">
         <nav id="main_nav">
             <div>
                 <a href="apps.html"><img class="logo" src="assets/logo_blanco.png" alt="logo"></a>
@@ -74,7 +74,42 @@
 
         <nav class="only_mobile">
             <a href="apps.html"><img src="assets/arrow_left.png" alt="arrow"></a>
-            <h2>Gráfica</h2>
+            <h2>Laboratorio</h2>
+            <a href="portal_graph.html">
+                <img src="assets/pulse.png" alt="graph">
+            </a>
+            <div id="deploy_menu_btn">
+                <img src="assets/menu_b.png" alt="menu">
+            </div>
+            <div id="deploy_menu">
+                <a href="portal_nota.html">
+                        Nota de ingreso
+                </a>
+                <a href="portal_control.html">
+                        Control de funciones vitales
+                </a>
+                <a href="portal_evolucion.html">
+                        Evolución hospitalización
+                </a>
+                <a href="portal_informe.html">
+                        Informe operatorio
+                </a>
+                <a href="portal_anotaciones.html">
+                        Anotaciones de enfermería
+                </a>
+                <a href="portal_balance.html">
+                        Balance hídrico
+                </a>
+                <a href="portal_laboratorio.html">
+                        Laboratorio
+                </a>
+                <a href="portal_imagenes.html">
+                        Imágenes
+                </a>
+                <a href="portal_epicrisis.html">
+                        Epicrisis
+                </a>
+            </div>
         </nav>
 
         <div class="perfil_client" >
@@ -109,58 +144,58 @@
             </div>
         </div>
 
-        <div class="layout_graph">
-            <div class="select_graph only_desktop">
-                <label for="item_1" class="active">
-                    <input type="checkbox" id="item_1" name="item_1">
-                        Lorem ipsum dolor sit
-                </label>
-                <label for="item_2" class="">
-                    <input type="checkbox" id="item_2" name="item_2">
-                        Lorem ipsum dolor sit
-                </label>
-                <label for="item_3" class="">
-                    <input type="checkbox" id="item_3" name="item_3">
-                        Lorem ipsum dolor sit                
-                </label>
-                <label for="item_4" class="">
-                    <input type="checkbox" id="item_4" name="item_4">
-                        Lorem ipsum dolor sit
-                </label>
-                <label for="item_5" class="">
-                    <input type="checkbox" id="item_5" name="item_5">
-                        Lorem ipsum dolor sit
-                </label>
-                <label for="item_6" class="">
-                    <input type="checkbox" id="item_6" name="item_6">
-                        Lorem ipsum dolor sit
-                </label>
-                <label for="item_7" class="">
-                    <input type="checkbox" id="item_7" name="item_7">
-                        Lorem ipsum dolor sit
-                </label>
-                <label for="item_8" class="">
-                    <input type="checkbox" id="item_8" name="item_8">
-                        Lorem ipsum dolor sit
-                </label>
-                <label for="item_9" class="">
-                    <input type="checkbox" id="item_9" name="item_9">
-                        Lorem ipsum dolor sit
-                </label>
+        <div class="content_layout" id="mid_y">
+
+            <div class="padding-left">
+                <a href="#" id="get_graph">
+
+                </a>
             </div>
-            <div class="graph_view">
-                <p class="blue only_mobile">Frecuencia cardiaca</p>
-                <canvas id="myChart" width="400" height="400"></canvas>
+            <div class="header_tab">
+                <a href="portal_nota.html">Nota de ingreso</a>
+                <a href="portal_control.html">Control de func. vitales</a>
+                <a href="portal_evolucion.html">Evolución hospitalización</a>
+                <a href="portal_informe.html">Informe operatorio</a>
+                <a href="portal_anotaciones.html">Anotaciones de enfermería</a>
+                <a href="portal_balance.html">Balance hídrico</a>
+                <a href="portal_laboratorio.html">Laboratorio</a>
+                <a href="portal_imagenes.html">Imágenes</a>
+                <a href="otros_formularios.html">
+                    <img src="assets/form.png" alt="">
+                </a>
             </div>
-            <div class="graph_view only_mobile">
-                <p class="blue only_mobile">Frecuencia cardiaca</p>
+
+            <div class="layout">
+                <p>Otros formularios</p>
+
+                <div class="items_forms">
+                    <div class="item_form">
+                        <p class="grey">
+                            Epicrisis
+                        </p>
+                        <a href="portal_epicrisis.html">
+                            Ver
+                        </a>
+                    </div>
+                    <div class="item_form">
+                        <p class="grey">
+                            Formulario 10
+                        </p>
+                        <a href="#">
+                            Ver
+                        </a>
+                    </div>
+                    <div class="item_form">
+                        <p class="grey">
+                            Formulario 11
+                        </p>
+                        <a href="#">
+                            Ver
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="graph_view only_mobile">
-                <p class="blue only_mobile">Frecuencia cardiaca</p>
-            </div>
-            <div class="graph_view only_mobile">
-                <p class="blue only_mobile">Frecuencia cardiaca</p>
-            </div>
+
         </div>
 
 
@@ -168,56 +203,38 @@
 
     <!-- Javascript toda web -->
     <script src="js/main_app.js"></script>
-    <script src="js/Chart.bundle.min.js"></script>
     <script>
+        
         (function(){
-            let checks = document.querySelectorAll('input[type="checkbox"]');
-            
-            checks.forEach(function(k){
-                k.addEventListener('change', function(e) {
-                    if(k.checked){
-                        k.parentNode.classList.add('active')
-                    }else{
-                        k.parentNode.classList.remove('active')
-                    }
+            let button_historial = document.getElementById('historial');
+            let menu_historial = document.getElementById('menu_historial');
+            let grid_menu = document.querySelectorAll('.grid_menu');
+            const app_portal = document.getElementById('portal_laboratorio');
+
+            button_historial.addEventListener('click', function(){
+                grid_menu.forEach(function(k){
+                    k.classList.toggle('active');
                 });
+            });
+
+            let date_button = document.querySelectorAll('.item_head');
+
+            date_button.forEach(function(k){
+                k.addEventListener('click', function(){
+                    k.parentNode.classList.toggle('active');
+                })
             })
 
+            let go_graph = document.getElementById('go_graph').getAttribute("href");
+            let get_graph = document.getElementById('get_graph');
 
+            function change_href(){
+                get_graph.setAttribute('href', go_graph);
+            }
+            change_href();
 
-            /*Graph*/
-                var ctx = document.getElementById("myChart").getContext('2d');
-                var myChart = new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                        labels: ["One", "Two", "Three", "Four", "Five"],
-                        datasets: [{
-                            label: '# of Votes',
-                            data: [1, 3, 6, 2, 4.5],
-                            backgroundColor: [
-                                'rgba(255, 99, 132, 0)'
-                            ],
-                            borderColor: [
-                                '#EB008A',
-                            ],
-                            borderWidth: 2
-                        }]
-                    },
-                    options: {
-                        responsive:true,
-                        maintainAspectRatio: false,
-                        aspectRatio: 2,
-                        scales: {
-                            yAxes: [{
-                                ticks: {
-                                    beginAtZero:true
-                                }
-                            }]
-                        },
-                    }
-                });
-                
-        })()
+        })();
+
     </script>
 </body>
 </html>

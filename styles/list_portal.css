@@ -1,0 +1,116 @@
+#list_portal, body{
+    background: var(--background);
+}
+#list_portal div.perfil_client{
+    padding: 80px 50px 10px;
+    background: var(--background);
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+#list_portal div.perfil_client .perfil_picture{
+    width: 165px;
+}
+#list_portal div.perfil_client .perfil_info{
+    width: 86%;
+    box-sizing: border-box;
+    margin-left: 20px;
+    background: #fff;  
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
+#list_portal div.perfil_info > div > div:nth-child(2){
+    min-width: 280px;
+    padding-left: 40px;
+    border-left: solid 1px #dddddd;
+    border-right: solid 1px #dddddd;
+}
+#list_portal div.perfil_info > div > div:nth-child(2)>div{
+    display: flex;
+    align-items: center;
+}
+#list_portal div.perfil_info > div > div:nth-child(2)>div >p:nth-child(1){
+    min-width: 110px
+}
+#list_portal div.perfil_info > div > div:nth-child(3) > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#list_portal div.perfil_info > div > div:nth-child(3) > a p{
+    max-width: 113px;
+    margin: 0 15px;
+    font-size: 15px;
+}
+#list_portal div.perfil_client .perfil_info h2{
+    margin: 0;
+}
+#list_portal div.perfil_client .perfil_info>div{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+#list_portal div.perfil_client .perfil_info>div p span{
+    color: var(--blue);
+    font-family: 'dinpro-medium'
+}
+#list_portal div.perfil_client .perfil_info>div p{
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+#list_layout{
+    padding: 20px;
+    box-sizing: border-box;
+}
+#list_layout .item_list{
+    display: flex;
+    color: var(--grey);
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1024px){
+    #list_portal div.perfil_client{
+        padding: 80px 20px 10px
+    }
+    #list_portal > div.perfil_client > div.perfil_info > div > div:nth-child(1) > p:nth-child(1) > span{
+        display: none;
+    }
+    #list_portal div.perfil_client .perfil_info>div{
+        display: block;
+    }
+    #list_portal div.perfil_info > div > div:nth-child(2){
+        display: none;
+    }
+    #list_portal div.perfil_info > div > div:nth-child(3){
+        display: none;
+    }
+    #list_portal div.perfil_client .perfil_info>div p:not(:nth-child(1)){
+        display: none;
+    }
+    #list_portal div.perfil_client .perfil_info{
+        background: none;
+        padding: 0;
+    }
+    nav.only_mobile{
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    #list_portal nav.only_mobile h2{
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+
+}

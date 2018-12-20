@@ -1,0 +1,176 @@
+#otros_formularios, body{
+    background: var(--background);
+}
+#otros_formularios div.perfil_client{
+    padding: 80px 50px 10px;
+    background: var(--background);
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+#otros_formularios div.perfil_client .perfil_picture{
+    width: 165px;
+}
+#otros_formularios div.perfil_client .perfil_info{
+    width: 86%;
+    box-sizing: border-box;
+    margin-left: 20px;
+    background: #fff;  
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
+#otros_formularios div.perfil_info > div > div:nth-child(2){
+    min-width: 280px;
+    padding-left: 40px;
+    border-left: solid 1px #dddddd;
+    border-right: solid 1px #dddddd;
+}
+#otros_formularios div.perfil_info > div > div:nth-child(2)>div{
+    display: flex;
+    align-items: center;
+}
+#otros_formularios div.perfil_info > div > div:nth-child(2)>div >p:nth-child(1){
+    min-width: 110px
+}
+#otros_formularios div.perfil_info > div > div:nth-child(3) > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#otros_formularios div.perfil_info > div > div:nth-child(3) > a p{
+    max-width: 113px;
+    margin: 0 15px;
+    font-size: 15px;
+}
+#otros_formularios div.perfil_client .perfil_info h2{
+    margin: 0;
+}
+#otros_formularios div.perfil_client .perfil_info>div{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+#otros_formularios div.perfil_client .perfil_info>div p span{
+    color: var(--blue);
+    font-family: 'dinpro-medium'
+}
+#otros_formularios div.perfil_client .perfil_info>div p{
+    margin: 5px 0;
+    font-size: 15px;
+}
+#otros_formularios div.content_layout div.header_tab{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 50px 20px;
+    background: var(--background);
+    box-sizing: border-box;
+}
+#otros_formularios div.content_layout div.header_tab > a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'dinpro-medium';
+    color: var(--blue);
+    height: 40px;
+}
+#otros_formularios div.content_layout div.header_tab > a.active{
+    background: var(--blue);
+    color: #fff;
+    border-radius: 7px;
+    margin: 0 5px;
+}
+#otros_formularios div.content_layout div.header_tab > a:nth-last-child(1){
+    width: 40%;
+}
+#otros_formularios div.content_layout div.header_tab > a:nth-child(1), #otros_formularios div.content_layout div.header_tab > a:nth-child(6){
+    width: 75%;;
+}
+#otros_formularios div.content_layout div.header_tab > a:nth-child(7), #otros_formularios div.content_layout div.header_tab > a:nth-child(8){
+    width: 55%;
+}
+#otros_formularios div.content_layout div.header_tab > a:nth-child(3){
+    width: 110%;    
+}
+#otros_formularios div.content_layout div.header_tab > a:nth-child(5){
+    width: 110%;
+}
+
+#otros_formularios .content_layout .layout{
+    padding: 0 50px;
+}
+
+#otros_formularios .content_layout .layout .item_form{
+    background: #fff;
+    border-radius: 10px;
+    max-width: 1000px;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+#otros_formularios .content_layout .layout .item_form > a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--green);
+    font-family: 'dinpro-bold';
+    width: 75px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 1024px){
+    #otros_formularios div.perfil_client{
+        padding: 80px 20px 10px
+    }
+    #otros_formularios > div.perfil_client > div.perfil_info > div > div:nth-child(1) > p:nth-child(1) > span{
+        display: none;
+    }
+    #otros_formularios div.perfil_client .perfil_info>div{
+        display: block;
+    }
+    #otros_formularios div.perfil_info > div > div:nth-child(2){
+        display: none;
+    }
+    #otros_formularios div.perfil_info > div > div:nth-child(3){
+        display: none;
+    }
+    #otros_formularios div.perfil_client .perfil_info>div p:not(:nth-child(1)){
+        display: none;
+    }
+    #otros_formularios div.perfil_client .perfil_info{
+        background: none;
+        padding: 0;
+    }
+    #otros_formularios div.content_layout div.header_tab{
+        display: none;
+    }
+    nav.only_mobile{
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    nav.only_mobile h2{
+        color: #fff;
+        font-size: 20px;
+    }
+    #otros_formularios .content_layout .layout{
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    #otros_formularios .content_layout .layout .item_form{
+        padding: 0 20px;
+    }
+}

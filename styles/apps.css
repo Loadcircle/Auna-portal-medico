@@ -1,5 +1,6 @@
 #apps{    
     background: var(--background);
+    min-height: 100vh;
 }
 /* Estilos Nav */
 #apps nav{
@@ -8,7 +9,7 @@
     box-sizing: border-box;
     background: var(--blue);
     height: 60px;
-    z-index: 3;
+    z-index: 30;
     top: 0;
     left: 0;
 }
@@ -22,7 +23,7 @@
     background: var(--blue_b);
     width: fit-content;height: 100vh;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
     top: 0;
     left: 0;
 }
@@ -100,9 +101,6 @@
     #apps .side_bar{
         padding: 75px 20px;
     }
-    #apps .side_bar.active{
-
-    }
     #apps .side_bar:before{
         content: '';
         background: url(../assets/arrow_left.png);
@@ -114,6 +112,11 @@
         position: absolute;
         right: 25px;
         top: 400px;
+        transform: rotate(180deg);
+        transition: all .4s;
+    }
+    #apps .side_bar.active:before{
+        transform: none;
     }
     #apps .side_bar a{
         height: auto;

@@ -208,11 +208,109 @@ nav#main_nav>div.perfil:before, nav#main_nav>div.clinica:before{
     bottom: 0;
     margin: auto;
 }
+nav#main_nav>div.bell > img{
+    position: relative;
+    z-index: 3;
+}
+nav#main_nav>div.bell > div{
+    position: absolute;
+    top: 25px;
+    background: var(--blue_b);
+    padding: 25px;
+    width: 350px;
+    right: 0;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    display: none;
+}
+nav#main_nav>div.bell.active_d > div{
+    display: block;
+}
+nav#main_nav>div.bell .not_item{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+nav#main_nav>div.bell .not_item > hr{
+    position: absolute;
+    bottom: 0;
+    width: calc(100% + 20px);
+    border: none;
+    height: 1px;
+    background: #ffffff;
+    opacity: .25;
+    left: -10px;
+}
+nav#main_nav>div.bell > div > p{
+    color: #ffffff;
+    font-size: 15px;
+}
+nav#main_nav>div.bell .not_item > div > p{
+    color: #fff;
+}
+nav#main_nav>div.bell .not_item > div > p:nth-child(1){
+    font-size: 15px;
+    color: #fff;
+    opacity: .5;
+}
 /* Estilos Nav */
 
 
 
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 
+.see_more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font-family: 'dinpro-bold';
+    margin: auto;
+    background: var(--blue_b);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.nav_bar_doc{
+    display: flex;
+    width: 180px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 25px;
+}
+div.nav_bar_doc > div:nth-child(2){
+    width: 40px;
+    height: 35px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    border: solid 1px #eeeeee99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+div.arrow{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/*Ajuste para boton historial en portales*/
+.grid_menu.active button#historial:before{
+    transform: rotate(180deg)
+}
 
 
 /*Documento*/

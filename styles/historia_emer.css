@@ -397,10 +397,10 @@ body{
     border-radius: 10px;
     margin: auto;
 }
-#historia_emer .item_table hr.last_hr{
+/* #historia_emer .item_table hr.last_hr{
     width: calc(100% + 15px);
     left: -15px;
-}
+} */
 
 
 
