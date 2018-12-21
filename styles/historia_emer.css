@@ -401,6 +401,9 @@ body{
     width: calc(100% + 15px);
     left: -15px;
 } */
+#historia_emer .nav_bar_doc{
+    margin-left: 0;
+}
 
 
 
