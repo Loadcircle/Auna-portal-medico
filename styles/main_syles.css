@@ -313,6 +313,28 @@ div.arrow{
 }
 
 
+
+/*Ajustes protales menu header_tab*/
+
+div.content_layout div.header_tab > a:nth-last-child(1){
+    width: 40%!important;
+}
+div.content_layout div.header_tab > a:nth-child(1), div.content_layout div.header_tab > a:nth-child(5){
+    width: 75%!important;
+}
+div.content_layout div.header_tab > a:nth-child(6), div.content_layout div.header_tab > a:nth-child(7){
+    width: 55%!important;
+}
+div.content_layout div.header_tab > a:nth-child(2){
+    width: 110%!important;    
+}
+div.content_layout div.header_tab > a:nth-child(4){
+    width: 110%!important;
+}
+div.content_layout div.header_tab > a:nth-last-child(2){
+    width: 85%!important;
+}
+
 /*Documento*/
 /*-----------------------------------------------------*/
 .content_view .flex_content_50{

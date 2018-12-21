@@ -84,21 +84,6 @@
     border-radius: 7px;
     margin: 0 5px;
 }
-#portal_epicrisis div.content_layout div.header_tab > a:nth-last-child(1){
-    width: 40%;
-}
-#portal_epicrisis div.content_layout div.header_tab > a:nth-child(1), #portal_epicrisis div.content_layout div.header_tab > a:nth-child(6){
-    width: 75%;;
-}
-#portal_epicrisis div.content_layout div.header_tab > a:nth-child(7), #portal_epicrisis div.content_layout div.header_tab > a:nth-child(8){
-    width: 55%;
-}
-#portal_epicrisis div.content_layout div.header_tab > a:nth-child(3){
-    width: 110%;    
-}
-#portal_epicrisis div.content_layout div.header_tab > a:nth-child(5){
-    width: 110%;
-}
 
 
 #portal_epicrisis .grid_menu{
