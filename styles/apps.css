@@ -159,4 +159,7 @@
     #apps .view .item > div{
         margin-right: 0;
     }
+    #apps #deploy_menu_btn{
+        margin-right: 30px;
+    }
 }

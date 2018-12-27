@@ -75,6 +75,91 @@
         <nav class="only_mobile">
             <a href="apps.html"><img src="assets/arrow_left.png" alt="arrow"></a>
             <h2>Gráfica</h2>
+            
+            <div class="bell active toggle_menu">
+                    <div class="relative">
+                        <img width="22px" src="assets/bell.png" alt="bell">
+                    </div>
+                    <div>
+                        <p>Liquidaciones observadas</p>
+                        <div class="not_items">
+                            <div class="not_item">
+                                <div>
+                                    <p>Código de liquidación</p>
+                                    <p>AUNA00001</p>
+                                </div>
+                                <div>
+                                    <p>Importe</p>
+                                    <p>S/ 1,500.00</p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="not_item">
+                                <div>
+                                    <p>Código de liquidación</p>
+                                    <p>AUNA00001</p>
+                                </div>
+                                <div>
+                                    <p>Importe</p>
+                                    <p>S/ 1,500.00</p>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="deploy_menu_btn">
+                    <img src="assets/menu_b.png" alt="menu">
+                </div>
+                <div id="deploy_menu">
+                    <a href="portal_nota.html">
+                            Nota de ingreso
+                    </a>
+                    <a href="portal_evolucion.html">
+                            Evolución hospitalización
+                    </a>
+                    <a href="portal_informe.html">
+                            Informe operatorio
+                    </a>
+                    <a href="portal_anotaciones.html">
+                            Anotaciones de enfermería
+                    </a>
+                    <a href="portal_balance.html">
+                            Balance hídrico
+                    </a>
+                    <a href="portal_laboratorio.html">
+                            Laboratorio
+                    </a>
+                    <a href="portal_imagenes.html">
+                            Imágenes
+                    </a>
+                    <a href="tecnicas_especiales.html">
+                            Técnicas especiales
+                    </a>
+                    <a href="portal_epicrisis.html">
+                            Epicrisis
+                    </a>
+                    <hr class="divider_menu">
+                    <a href="#">
+                            Clinica Bellavista
+                    </a>
+                    <a href="#">
+                            Clinica Camino Real
+                    </a>
+                    <a href="#">
+                            Clinica Miraflores
+                    </a>
+                    <a href="#">
+                            Clinica Vallesur
+                    </a>       
+                    <hr class="divider_menu">         
+                    <a href="#">
+                            Protocolos de hh.mm.
+                    </a>
+                    <a href="#">
+                            Cerrar sesión
+                    </a>
+                </div>
         </nav>
 
         <div class="perfil_client" >
@@ -188,19 +273,48 @@
             /*Graph*/
                 var ctx = document.getElementById("myChart").getContext('2d');
                 var myChart = new Chart(ctx, {
-                    type: 'line',
+                    type: 'bar',
                     data: {
                         labels: ["One", "Two", "Three", "Four", "Five"],
                         datasets: [{
-                            label: '# of Votes',
-                            data: [1, 3, 6, 2, 4.5],
-                            backgroundColor: [
-                                'rgba(255, 99, 132, 0)'
-                            ],
+                            label: 'Barra 1',
+                            data: [5, 3, 6],
                             borderColor: [
-                                '#EB008A',
+                                '#00FF00 ',
+                                '#00FF00 ',
+                                '#00FF00 ',
                             ],
                             borderWidth: 2
+                        }, 
+                        {
+                            label: 'Barra 2',
+                            hidden: false,
+                            lineTension: 0,
+                            data: [3, 4, 2, 7],
+                            backgroundColor: [
+                                'rgba(0, 0, 0, 0)'
+                            ],
+                            borderColor: [
+                                '#000',
+                            ],
+                            borderWidth: 2,
+                            type: 'line',
+                            
+                        }, 
+                        {
+                            label: 'Barra 2',
+                            hidden: false,
+                            lineTension: 0,
+                            data: [1, 2, 5, 3],
+                            backgroundColor: [
+                                'rgba(0, 0, 0, 0)'
+                            ],
+                            borderColor: [
+                                '#FF0000 ',
+                            ],
+                            borderWidth: 2,
+                            type: 'line',
+                            
                         }]
                     },
                     options: {
@@ -208,10 +322,11 @@
                         maintainAspectRatio: false,
                         aspectRatio: 2,
                         scales: {
-                            yAxes: [{
+                            xAxes: [{
                                 ticks: {
-                                    beginAtZero:true
-                                }
+                                    beginAtZero:false,
+                                },                                
+                                barPercentage:0.01, 
                             }]
                         },
                     }

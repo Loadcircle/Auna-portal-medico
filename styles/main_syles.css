@@ -172,6 +172,9 @@ nav#main_nav>div ul li{
     font-family: 'dinpro-medium';
     color: #fff;
 }
+nav#main_nav>div ul li > a{
+    color: #fff;
+}
 nav#main_nav>div > span{
     font-size: 15px;
     font-family: 'dinpro-medium';
@@ -249,6 +252,85 @@ nav#main_nav>div.bell .not_item > div > p{
     color: #fff;
 }
 nav#main_nav>div.bell .not_item > div > p:nth-child(1){
+    font-size: 15px;
+    color: #fff;
+    opacity: .5;
+}
+.divider_menu{
+    border: none;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    
+    padding-bottom: 1px;
+}
+
+
+/*Campana mobile*/
+nav.only_mobile>div.bell{
+    cursor: pointer;
+    background: var(--blue_b);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav.only_mobile>div.bell.active > div.relative:before{
+    content: '';
+    position: absolute;
+    top: -7px;
+    right: -9px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #c60000;
+}
+nav.only_mobile>div.bell > div:not(.relative){
+    position: absolute;
+    top: 50px;
+    background: var(--blue_b);
+    padding: 25px;
+    width: 100%;
+    left: 0;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    display: none;
+    box-sizing: border-box;
+}
+nav.only_mobile>div.bell.active_d > div:not(.relative){
+    display: block;
+}
+.relative{
+    position: relative;
+}
+
+nav.only_mobile>div.bell .not_item{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+nav.only_mobile>div.bell .not_item > hr{
+    position: absolute;
+    bottom: 0;
+    width: calc(100% + 20px);
+    border: none;
+    height: 1px;
+    background: #ffffff;
+    opacity: .25;
+    left: -10px;
+}
+nav.only_mobile>div.bell > div > p{
+    color: #ffffff;
+    font-size: 15px;
+}
+nav.only_mobile>div.bell .not_item > div > p{
+    color: #fff;
+}
+nav.only_mobile>div.bell .not_item > div > p:nth-child(1){
     font-size: 15px;
     color: #fff;
     opacity: .5;
@@ -531,15 +613,17 @@ div.content_layout div.header_tab > a:nth-last-child(2){
     .only_desktop{
         display: none!important;
     }
-
+    nav.only_mobile h2{
+        font-size: 18px!important;
+    }
 
 /*Navegador mobile para portales*/
     #deploy_menu{
-        position: fixed;
+        position: fixed!important;
         top: 60px;
         left: 0;
         padding: 20px;
-        display: none;
+        display: none!important;
         flex-direction: column;
         width: 100%;
         height: 100%;
@@ -547,9 +631,10 @@ div.content_layout div.header_tab > a:nth-last-child(2){
         background: var(--blue);
         z-index: 20;
         box-sizing: border-box;
+        max-height: calc(100vh - 50px);
     }
     #deploy_menu.active{
-        display: flex;
+        display: flex!important;
     }
     #deploy_menu>a{
         font-size: 23px;
