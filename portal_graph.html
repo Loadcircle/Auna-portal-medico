@@ -196,55 +196,38 @@
 
         <div class="layout_graph">
             <div class="select_graph only_desktop">
-                <label for="item_1" class="active">
+                <label for="item_1">
                     <input type="checkbox" id="item_1" name="item_1">
-                        Lorem ipsum dolor sit
+                        Presión Arterial
                 </label>
                 <label for="item_2" class="">
                     <input type="checkbox" id="item_2" name="item_2">
-                        Lorem ipsum dolor sit
+                        Frecuencia Respiratoria
                 </label>
                 <label for="item_3" class="">
                     <input type="checkbox" id="item_3" name="item_3">
-                        Lorem ipsum dolor sit                
+                        Temperatura
                 </label>
                 <label for="item_4" class="">
                     <input type="checkbox" id="item_4" name="item_4">
-                        Lorem ipsum dolor sit
-                </label>
-                <label for="item_5" class="">
-                    <input type="checkbox" id="item_5" name="item_5">
-                        Lorem ipsum dolor sit
-                </label>
-                <label for="item_6" class="">
-                    <input type="checkbox" id="item_6" name="item_6">
-                        Lorem ipsum dolor sit
-                </label>
-                <label for="item_7" class="">
-                    <input type="checkbox" id="item_7" name="item_7">
-                        Lorem ipsum dolor sit
-                </label>
-                <label for="item_8" class="">
-                    <input type="checkbox" id="item_8" name="item_8">
-                        Lorem ipsum dolor sit
-                </label>
-                <label for="item_9" class="">
-                    <input type="checkbox" id="item_9" name="item_9">
-                        Lorem ipsum dolor sit
+                        Pulso Frecuencia
                 </label>
             </div>
             <div class="graph_view">
-                <p class="blue only_mobile">Frecuencia cardiaca</p>
+                <p class="blue only_mobile">Presión Arterial</p>
                 <canvas id="myChart" width="400" height="400"></canvas>
             </div>
             <div class="graph_view only_mobile">
-                <p class="blue only_mobile">Frecuencia cardiaca</p>
+                <p class="blue only_mobile">Frecuencia Respiratoria</p>
+                <canvas id="" width="400" height="400"></canvas>
             </div>
             <div class="graph_view only_mobile">
-                <p class="blue only_mobile">Frecuencia cardiaca</p>
+                <p class="blue only_mobile">Temperatura</p>
+                <canvas id="" width="400" height="400"></canvas>
             </div>
             <div class="graph_view only_mobile">
-                <p class="blue only_mobile">Frecuencia cardiaca</p>
+                <p class="blue only_mobile">Pulso Frecuencia</p>
+                <canvas id="" width="400" height="400"></canvas>
             </div>
         </div>
 
@@ -271,24 +254,34 @@
 
 
             /*Graph*/
-                var ctx = document.getElementById("myChart").getContext('2d');
-                var myChart = new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        labels: ["One", "Two", "Three", "Four", "Five"],
-                        datasets: [{
+            //Grafica principal
+            let ctx = document.getElementById("myChart").getContext('2d');
+    
+            //Graficas de telefono
+            let ctxs = document.querySelectorAll('canvas');
+
+
+            const labels =  ["One", "Two", "Three", "Four", "Five"];
+            let hidden_var = true;
+            if(window.innerWidth < 1025){
+                hidden_var = false;
+            }
+
+            let dataset_1 = {
                             label: 'Barra 1',
                             data: [5, 3, 6],
+                            hidden: hidden_var,
                             borderColor: [
                                 '#00FF00 ',
                                 '#00FF00 ',
                                 '#00FF00 ',
                             ],
-                            borderWidth: 2
-                        }, 
-                        {
+                            borderWidth: 2,
+                            type: 'bar',    
+                        };
+            let dataset_2 = {
                             label: 'Barra 2',
-                            hidden: false,
+                            hidden: hidden_var,
                             lineTension: 0,
                             data: [3, 4, 2, 7],
                             backgroundColor: [
@@ -298,12 +291,11 @@
                                 '#000',
                             ],
                             borderWidth: 2,
-                            type: 'line',
-                            
-                        }, 
-                        {
-                            label: 'Barra 2',
-                            hidden: false,
+                            type: 'line',                            
+                        };
+            let dataset_3 = {
+                            label: 'Barra 3',
+                            hidden: hidden_var,
                             lineTension: 0,
                             data: [1, 2, 5, 3],
                             backgroundColor: [
@@ -315,9 +307,26 @@
                             borderWidth: 2,
                             type: 'line',
                             
-                        }]
-                    },
-                    options: {
+                        };
+            let dataset_4 = {
+                            label: 'Barra 4',
+                            hidden: hidden_var,
+                            lineTension: 0,
+                            data: [3, 6, 2, 3],
+                            backgroundColor: [
+                                'rgba(0, 0, 0, 0)'
+                            ],
+                            borderColor: [
+                                '#00f ',
+                            ],
+                            borderWidth: 2,
+                            type: 'line',
+                            
+                        };
+
+            let all_datasets = [dataset_1, dataset_2, dataset_3, dataset_4];
+
+            let options = {
                         responsive:true,
                         maintainAspectRatio: false,
                         aspectRatio: 2,
@@ -329,10 +338,71 @@
                                 barPercentage:0.01, 
                             }]
                         },
-                    }
+                    };
+
+                let buttons_graph = document.querySelectorAll('.select_graph  > label > input');
+            
+                buttons_graph.forEach(function(j, v){
+                    j.addEventListener('click', function(){
+                        ole(v);
+                    });
                 });
+            
+                function ole(k){
+                    if(myChart.data.datasets[k].hidden == true){
+                        myChart.data.datasets[k].hidden = false;
+                    }else{                        
+                        myChart.data.datasets[k].hidden = true;
+                    }
+                    myChart.update();
+                }
+
+
                 
+            if(window.innerWidth > 1025){
+            hidden_var = true;
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: all_datasets
+                    },
+                    options: options
+                });
+            }
+
+            if(window.innerWidth < 1025){
+
+            hidden_var = false;
+
+                ctxs.forEach(function(c, v){
+
+
+                new Chart(c.getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [all_datasets[v]]
+                    },
+                    options: options
+                });
+
+
+                })
+
+
+
+
+
+
+            }
+
+
+
+
         })()
+        
+
     </script>
 </body>
 </html>
