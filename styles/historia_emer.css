@@ -632,10 +632,15 @@ body{
     #historia_emer div.insight_search form.active > div input{
         width: calc(100% - 40px)!important;
     }
-    #historia_emer div.insight_search form label{
-        display: none;
-    }
 
+    #historia_emer div.insight_search form label{
+        color: #fff;
+        margin-top: 15px;
+        margin-left: 12px;
+    }
+    #historia_emer div.insight_search form label:before{
+        background-color: #Fff;
+    }
     #historia_emer div.insight_search form input[type="submit"]{
         color: transparent;
         width: 40px;

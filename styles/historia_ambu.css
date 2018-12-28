@@ -632,9 +632,13 @@ body{
         width: calc(100% - 40px)!important;
     }
     #historia_ambu div.insight_search form label{
-        display: none;
+        color: #fff;
+        margin-top: 15px;
+        margin-left: 12px;
     }
-
+    #historia_ambu div.insight_search form label:before{
+        background-color: #Fff;
+    }
     #historia_ambu div.insight_search form input[type="submit"]{
         color: transparent;
         width: 40px;
