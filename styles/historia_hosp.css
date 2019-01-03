@@ -614,6 +614,7 @@ body{
         padding: 20px;
         background: var(--blue_c);
         margin: 0;
+        z-index: 5;
     }
     #historia_hosp.active_search .insight_search > div{
         display: flex;

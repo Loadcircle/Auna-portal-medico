@@ -81,8 +81,24 @@
                 <img  src="assets/search_white.png" alt="search">
             </div>
             
-            <div>
-                <img src="//via.placeholder.com/25x25">
+            <div class="change_sede only_mobile">
+                <div id="sede_click">
+                    <img src="assets/sede.png">
+                </div>
+                <div id="sede_deploy">
+                    <h2>Sede</h2>
+                    <form action="#">
+                        <select name="sede" id="sede_select" class="select">
+                            <option value="delgado">Clinica Delgado</option>
+                            <option value="Camino">Clinica Camino Real</option>
+                            <option value="Miraflores">Clinica Miraflores</option>
+                            <option value="Vallesur">Clinica Vallesur</option>
+                        </select>
+                        <label for="envia_sede" class="envia_sede_label">
+                            <input type="submit" value="Enviar" id="envia_sede">
+                        </label>
+                    </form>
+                </div>
             </div>
             <div class="bell active toggle_menu">
                 <div class="relative">

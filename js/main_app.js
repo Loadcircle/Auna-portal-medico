@@ -30,4 +30,22 @@
         });
     }
     
+    
+
+
+
+    
+
+    let sede_click = document.getElementById('sede_click');
+    let sede_deploy = document.getElementById('sede_deploy');
+    let change_sede  = document.querySelector('.change_sede ');
+    
+    if(sede_click){
+        sede_click.addEventListener('click', function(){
+            change_sede.classList.toggle('active');
+        })
+    }
+    
+
+
 })();

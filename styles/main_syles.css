@@ -300,6 +300,7 @@ nav.only_mobile>div.bell > div:not(.relative){
     border-top-left-radius: 0;
     display: none;
     box-sizing: border-box;
+    z-index: 5;
 }
 nav.only_mobile>div.bell.active_d > div:not(.relative){
     display: block;
@@ -606,17 +607,7 @@ div.content_layout div.header_tab > a:nth-last-child(2){
 
 
 @media (max-width: 1024px){
-    .only_mobile{
-        display: flex!important;
-    }
     
-    .only_desktop{
-        display: none!important;
-    }
-    nav.only_mobile h2{
-        font-size: 18px!important;
-    }
-
 /*Navegador mobile para portales*/
     #deploy_menu{
         position: fixed!important;
@@ -710,6 +701,97 @@ div.content_layout div.header_tab > a:nth-last-child(2){
 }
 /*Documento*/
 /*-----------------------------------------------------*/
+
+
+
+    /* Cambio de sede mobile */
+    #sede_click{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .change_sede.active #sede_click{
+        background-color: #008fa8;
+    }
+    .change_sede{
+        height: 100%;
+    }
+    #sede_click img{
+        width: 22px;
+    }
+    #sede_deploy{
+        display: none;
+    }
+    .change_sede.active #sede_deploy{
+        position: absolute;
+        display: block;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 16px;  
+        background-color: #008fa8;
+    }
+    #sede_deploy h2{
+        font-size: 20px;
+        font-weight: 900;
+        font-family: 'black';
+        color: #11acc8!important;
+        margin-bottom: 10px!important;
+    }
+    #sede_select{
+        width: 78%;
+        margin-right: 5px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
+        background-color: #ffffff;
+        padding-left: 15px;
+        color: #757575;
+        border: none;
+    }
+    label.envia_sede_label{
+        position: relative;  
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: #11acc8;
+        border-radius: 5px;
+        z-index: 5;
+    }
+    label.envia_sede_label:before{
+        content: url(../assets/Next_white.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: auto;
+        right: 0;
+        bottom: 0;
+        width: fit-content;
+        height: fit-content;
+    }
+    #envia_sede{
+        width: 100%;
+        height: 100%;
+        background: none;
+        border: none;
+        color: transparent;
+        position: relative;
+        z-index: 10;
+    }
+    .only_mobile{
+        display: flex!important;
+    }
+    
+    .only_desktop{
+        display: none!important;
+    }
+    nav.only_mobile h2{
+        font-size: 18px!important;
+    }
+/* Cambio de sede mobile */
 }
 
 @media (max-width: 350px){
