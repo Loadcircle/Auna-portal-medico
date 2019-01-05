@@ -139,7 +139,7 @@ nav#main_nav>div.bell{
     position: relative;
     margin-left: 30%;
 }
-nav#main_nav>div.bell.active:before{
+nav#main_nav>div.bell.active_bell:before{
     content: '';
     position: absolute;
     top: 1px;
@@ -278,7 +278,7 @@ nav.only_mobile>div.bell{
     align-items: center;
     justify-content: center;
 }
-nav.only_mobile>div.bell.active > div.relative:before{
+nav.only_mobile>div.bell.active_bell > div.relative:before{
     content: '';
     position: absolute;
     top: -7px;

@@ -23,7 +23,7 @@
                 <p>| Historia Clínica</p>
             </div>
 
-            <div class="bell active toggle_menu">
+            <div class="bell toggle_menu active_bell">
                 <img width="22px" src="assets/bell.png" alt="bell">
                 <div>
                     <p>Liquidaciones observadas</p>
@@ -100,7 +100,7 @@
                     </form>
                 </div>
             </div>
-            <div class="bell active toggle_menu">
+            <div class="bell toggle_menu active_bell">
                 <div class="relative">
                     <img width="22px" src="assets/bell.png" alt="bell">
                 </div>
@@ -1102,17 +1102,12 @@
                 this.parentElement.classList.toggle('checked');
             })    
             
-            const app = document.getElementById('historia_hosp');
-            const search_toggle = document.getElementById('search_toggle');
             let forms = document.querySelectorAll('form');
             const form_name = document.getElementById('form_name');
             const form_dni = document.getElementById('form_dni');
             let item_search = document.querySelectorAll('.insight_search a');
-
-            search_toggle.addEventListener('click', function(){
-                app.classList.toggle('active_search');
-            });
-
+            const app = document.getElementById('historia_hosp');
+            
             item_search.forEach(function(k, v){
 
                 k.addEventListener('click', function(){
