@@ -250,11 +250,14 @@ nav#main_nav>div.bell > div > p{
 }
 nav#main_nav>div.bell .not_item > div > p{
     color: #fff;
+    margin-top: 5px; 
+    margin-bottom: 30px
 }
 nav#main_nav>div.bell .not_item > div > p:nth-child(1){
     font-size: 15px;
     color: #fff;
     opacity: .5;
+    margin-bottom: 0;
 }
 .divider_menu{
     border: none;
@@ -330,11 +333,14 @@ nav.only_mobile>div.bell > div > p{
 }
 nav.only_mobile>div.bell .not_item > div > p{
     color: #fff;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 nav.only_mobile>div.bell .not_item > div > p:nth-child(1){
     font-size: 15px;
     color: #fff;
     opacity: .5;
+    margin-bottom: 0;
 }
 /* Estilos Nav */
 
