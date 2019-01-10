@@ -126,4 +126,27 @@
     }
 
 
+
+    window.onclick = function(e) {
+        if (!e.target.matches('.toggle_menu') &&
+        !e.target.matches('.toggle_menu *') &&
+        !e.target.matches('.bell') && 
+        !e.target.matches('.bell *') && 
+        !e.target.matches('.perfil') && 
+        !e.target.matches('.perfil *')){
+            var dropdowns = document.getElementsByClassName("toggle_menu");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('active')) {
+                    openDropdown.classList.remove('active');
+                }
+                if(openDropdown.classList.contains('active_d')){
+                    openDropdown.classList.remove('active_d');
+                }
+            }
+        }
+    }
+
+
 })();
